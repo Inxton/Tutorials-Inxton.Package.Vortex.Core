@@ -1,4 +1,4 @@
-﻿// #define LOCAL // Comment if your target is remote
+﻿#define LOCAL // Comment if your target is remote
 
 using System;
 using System.Collections.Generic;
@@ -15,7 +15,7 @@ namespace RoomController
         const string AmsId = null; // your ams id or set to 'null' if local
         const int Port = 851;
 #else
-            const string AmsId = "172.20.10.102.1.1"; // set your target ams id
+            const string AmsId = "172.20.10.2.1.1"; // set your target ams id
             const int Port = 851;
 #endif
             public static RoomControllerTwinController RoomControllerPlc { get; } = new RoomControllerTwinController(Tc3ConnectorAdapter.Create(AmsId, Port));
