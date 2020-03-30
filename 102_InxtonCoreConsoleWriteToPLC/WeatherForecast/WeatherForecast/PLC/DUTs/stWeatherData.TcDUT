@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <DUT Name="stWeatherData" Id="{8f6c1984-11f0-4bf8-82ce-2212781b60de}">
+    <Declaration><![CDATA[TYPE stWeatherData :
+STRUCT
+	sunrise : DT;
+	sunset : DT;
+	Forecast : ARRAY[0..39] OF stForecast;
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

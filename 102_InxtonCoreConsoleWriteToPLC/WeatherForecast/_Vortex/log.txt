@@ -1,0 +1,936 @@
+2020-02-25 16:35:43.764 +01:00 [INF] Builder version : 0.106.0.0 / 0.106.0-alpha.7+Branch.develop.Sha.5090104d1941e034bb163d17f95aa56b30e77402
+2020-02-25 16:35:44.285 +01:00 [WRN] >>>>>>"W","","Config file C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\vortex_config.json does not exists. Creating default one with defaults.","","","0","0"
+2020-02-25 16:35:47.789 +01:00 [VRB] ----- Adding non existing type: stForecast
+2020-02-25 16:35:47.792 +01:00 [VRB] ----- Adding non existing type: stWeatherData
+2020-02-25 16:35:47.798 +01:00 [VRB] ----- Adding non existing type: MAIN
+2020-02-25 16:35:48.215 +01:00 [VRB] Building constructor statement in type stForecast member _timeFrom=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-25 16:35:48.247 +01:00 [VRB] Building constructor statement in type stForecast member _timeTo=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-25 16:35:48.247 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.249 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.249 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_type=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.249 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.249 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.249 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.249 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.250 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.250 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.250 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.250 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.250 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_min=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.250 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_max=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.251 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_feel_like=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.251 +01:00 [VRB] Building constructor statement in type stForecast member _pressure_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.251 +01:00 [VRB] Building constructor statement in type stForecast member _pressure_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.252 +01:00 [VRB] Building constructor statement in type stForecast member _humidity_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 16:35:48.252 +01:00 [VRB] Building constructor statement in type stForecast member _humidity_UNIT=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 16:35:48.304 +01:00 [VRB] Building constructor statement in type stForecast member AttributeName="";
+2020-02-25 16:35:48.458 +01:00 [VRB] Building constructor statement in type stWeatherData member _sunrise=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-25 16:35:48.458 +01:00 [VRB] Building constructor statement in type stWeatherData member _sunset=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-25 16:35:48.486 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast=newstForecast[40];
+2020-02-25 16:35:48.495 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[0]=newstForecast();
+2020-02-25 16:35:48.495 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[1]=newstForecast();
+2020-02-25 16:35:48.495 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[2]=newstForecast();
+2020-02-25 16:35:48.495 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[3]=newstForecast();
+2020-02-25 16:35:48.495 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[4]=newstForecast();
+2020-02-25 16:35:48.495 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[5]=newstForecast();
+2020-02-25 16:35:48.495 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[6]=newstForecast();
+2020-02-25 16:35:48.495 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[7]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[8]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[9]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[10]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[11]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[12]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[13]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[14]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[15]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[16]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[17]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[18]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[19]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[20]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[21]=newstForecast();
+2020-02-25 16:35:48.496 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[22]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[23]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[24]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[25]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[26]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[27]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[28]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[29]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[30]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[31]=newstForecast();
+2020-02-25 16:35:48.497 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[32]=newstForecast();
+2020-02-25 16:35:48.498 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[33]=newstForecast();
+2020-02-25 16:35:48.498 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[34]=newstForecast();
+2020-02-25 16:35:48.498 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[35]=newstForecast();
+2020-02-25 16:35:48.498 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[36]=newstForecast();
+2020-02-25 16:35:48.498 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[37]=newstForecast();
+2020-02-25 16:35:48.498 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[38]=newstForecast();
+2020-02-25 16:35:48.498 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[39]=newstForecast();
+2020-02-25 16:35:48.520 +01:00 [VRB] Building constructor statement in type stWeatherData member AttributeName="";
+2020-02-25 16:35:48.530 +01:00 [VRB] Building constructor statement in type MAIN member _WeatherData=newstWeatherData();
+2020-02-25 16:35:48.530 +01:00 [VRB] Building constructor statement in type MAIN member AttributeName="";
+2020-02-25 16:35:48.642 +01:00 [INF] Compiling sources 'PLC'...
+2020-02-25 16:35:49.612 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\MAIN.g.cs
+2020-02-25 16:35:49.653 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stWeatherData.g.cs
+2020-02-25 16:35:49.659 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stForecast.g.cs
+2020-02-25 16:35:49.690 +01:00 [VRB] ----- Adding non existing type: PLCTwinController
+2020-02-25 16:35:49.693 +01:00 [VRB] Building constructor statement in type PLCTwinController member _MAIN=newMAIN();
+2020-02-25 16:35:49.694 +01:00 [VRB] Building constructor statement in type PLCTwinController member AttributeName="";
+2020-02-25 16:35:49.733 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\PLC.g.cs
+2020-02-25 16:35:49.762 +01:00 [VRB] ----- Adding non existing type: ST_LibVersion
+2020-02-25 16:35:49.762 +01:00 [VRB] ----- Adding non existing type: PlcAppSystemInfo
+2020-02-25 16:35:49.763 +01:00 [VRB] ----- Adding non existing type: PlcTaskSystemInfo
+2020-02-25 16:35:50.129 +01:00 [VRB] Creating localization for type PLC.stForecast
+2020-02-25 16:35:50.132 +01:00 [VRB] Creating localization for type PLC.stWeatherData
+2020-02-25 16:35:50.133 +01:00 [VRB] Creating localization for type PLC.MAIN
+2020-02-25 16:35:50.133 +01:00 [VRB] Creating localization for type PLC.PLCTwinController
+2020-02-25 16:35:50.133 +01:00 [VRB] Creating localization for type PLC.ST_LibVersion
+2020-02-25 16:35:50.133 +01:00 [VRB] Creating localization for type PLC.PlcAppSystemInfo
+2020-02-25 16:35:50.133 +01:00 [VRB] Creating localization for type PLC.PlcTaskSystemInfo
+2020-02-25 16:35:50.323 +01:00 [INF] >>>>>>I, Done
+2020-02-25 17:07:26.636 +01:00 [INF] Builder version : 0.106.0.0 / 0.106.0-alpha.7+Branch.develop.Sha.5090104d1941e034bb163d17f95aa56b30e77402
+2020-02-25 17:07:30.254 +01:00 [VRB] ----- Adding non existing type: stForecast
+2020-02-25 17:07:30.256 +01:00 [VRB] ----- Adding non existing type: stWeatherData
+2020-02-25 17:07:30.262 +01:00 [VRB] ----- Adding non existing type: MAIN
+2020-02-25 17:07:30.677 +01:00 [VRB] Building constructor statement in type stForecast member _timeFrom=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-25 17:07:30.707 +01:00 [VRB] Building constructor statement in type stForecast member _timeTo=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-25 17:07:30.709 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 17:07:30.709 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.710 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_type=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 17:07:30.710 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.710 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 17:07:30.711 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.711 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 17:07:30.711 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 17:07:30.711 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.712 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 17:07:30.712 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_min=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.712 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_max=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.713 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_feel_like=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.713 +01:00 [VRB] Building constructor statement in type stForecast member _pressure_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.713 +01:00 [VRB] Building constructor statement in type stForecast member _pressure_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 17:07:30.713 +01:00 [VRB] Building constructor statement in type stForecast member _humidity_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-25 17:07:30.714 +01:00 [VRB] Building constructor statement in type stForecast member _humidity_UNIT=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-25 17:07:30.753 +01:00 [VRB] Building constructor statement in type stForecast member AttributeName="";
+2020-02-25 17:07:30.871 +01:00 [VRB] Building constructor statement in type stWeatherData member _sunrise=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-25 17:07:30.872 +01:00 [VRB] Building constructor statement in type stWeatherData member _sunset=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-25 17:07:30.893 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast=newstForecast[40];
+2020-02-25 17:07:30.902 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[0]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[1]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[2]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[3]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[4]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[5]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[6]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[7]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[8]=newstForecast();
+2020-02-25 17:07:30.903 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[9]=newstForecast();
+2020-02-25 17:07:30.904 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[10]=newstForecast();
+2020-02-25 17:07:30.904 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[11]=newstForecast();
+2020-02-25 17:07:30.904 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[12]=newstForecast();
+2020-02-25 17:07:30.904 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[13]=newstForecast();
+2020-02-25 17:07:30.904 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[14]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[15]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[16]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[17]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[18]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[19]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[20]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[21]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[22]=newstForecast();
+2020-02-25 17:07:30.905 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[23]=newstForecast();
+2020-02-25 17:07:30.906 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[24]=newstForecast();
+2020-02-25 17:07:30.906 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[25]=newstForecast();
+2020-02-25 17:07:30.906 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[26]=newstForecast();
+2020-02-25 17:07:30.906 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[27]=newstForecast();
+2020-02-25 17:07:30.906 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[28]=newstForecast();
+2020-02-25 17:07:30.906 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[29]=newstForecast();
+2020-02-25 17:07:30.906 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[30]=newstForecast();
+2020-02-25 17:07:30.907 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[31]=newstForecast();
+2020-02-25 17:07:30.907 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[32]=newstForecast();
+2020-02-25 17:07:30.907 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[33]=newstForecast();
+2020-02-25 17:07:30.907 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[34]=newstForecast();
+2020-02-25 17:07:30.907 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[35]=newstForecast();
+2020-02-25 17:07:30.907 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[36]=newstForecast();
+2020-02-25 17:07:30.909 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[37]=newstForecast();
+2020-02-25 17:07:30.909 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[38]=newstForecast();
+2020-02-25 17:07:30.909 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[39]=newstForecast();
+2020-02-25 17:07:30.940 +01:00 [VRB] Building constructor statement in type stWeatherData member AttributeName="";
+2020-02-25 17:07:30.953 +01:00 [VRB] Building constructor statement in type MAIN member _WeatherData=newstWeatherData();
+2020-02-25 17:07:30.954 +01:00 [VRB] Building constructor statement in type MAIN member AttributeName="";
+2020-02-25 17:07:31.062 +01:00 [INF] Compiling sources 'PLC'...
+2020-02-25 17:07:32.046 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\MAIN.g.cs
+2020-02-25 17:07:32.124 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stForecast.g.cs
+2020-02-25 17:07:32.138 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stWeatherData.g.cs
+2020-02-25 17:07:32.199 +01:00 [VRB] ----- Adding non existing type: PLCTwinController
+2020-02-25 17:07:32.202 +01:00 [VRB] Building constructor statement in type PLCTwinController member _MAIN=newMAIN();
+2020-02-25 17:07:32.203 +01:00 [VRB] Building constructor statement in type PLCTwinController member AttributeName="";
+2020-02-25 17:07:32.247 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\PLC.g.cs
+2020-02-25 17:07:32.281 +01:00 [VRB] ----- Adding non existing type: ST_LibVersion
+2020-02-25 17:07:32.283 +01:00 [VRB] ----- Adding non existing type: PlcAppSystemInfo
+2020-02-25 17:07:32.283 +01:00 [VRB] ----- Adding non existing type: PlcTaskSystemInfo
+2020-02-25 17:07:32.435 +01:00 [VRB] Creating localization for type PLC.stForecast
+2020-02-25 17:07:32.437 +01:00 [VRB] Creating localization for type PLC.stWeatherData
+2020-02-25 17:07:32.438 +01:00 [VRB] Creating localization for type PLC.MAIN
+2020-02-25 17:07:32.438 +01:00 [VRB] Creating localization for type PLC.PLCTwinController
+2020-02-25 17:07:32.438 +01:00 [VRB] Creating localization for type PLC.ST_LibVersion
+2020-02-25 17:07:32.438 +01:00 [VRB] Creating localization for type PLC.PlcAppSystemInfo
+2020-02-25 17:07:32.438 +01:00 [VRB] Creating localization for type PLC.PlcTaskSystemInfo
+2020-02-25 17:07:32.518 +01:00 [INF] >>>>>>I, Done
+2020-02-26 09:57:34.660 +01:00 [INF] Builder version : 0.106.0.0 / 0.106.0-alpha.7+Branch.develop.Sha.5090104d1941e034bb163d17f95aa56b30e77402
+2020-02-26 09:57:38.434 +01:00 [VRB] ----- Adding non existing type: stForecast
+2020-02-26 09:57:38.437 +01:00 [VRB] ----- Adding non existing type: stWeatherData
+2020-02-26 09:57:38.444 +01:00 [VRB] ----- Adding non existing type: MAIN
+2020-02-26 09:57:38.862 +01:00 [VRB] Building constructor statement in type stForecast member _timeFrom=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 09:57:38.893 +01:00 [VRB] Building constructor statement in type stForecast member _timeTo=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 09:57:38.896 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 09:57:38.897 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.898 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_type=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 09:57:38.899 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.900 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 09:57:38.900 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.901 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 09:57:38.902 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 09:57:38.902 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.903 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 09:57:38.904 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_min=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.905 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_max=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.905 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_feel_like=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.906 +01:00 [VRB] Building constructor statement in type stForecast member _pressure_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.906 +01:00 [VRB] Building constructor statement in type stForecast member _pressure_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 09:57:38.907 +01:00 [VRB] Building constructor statement in type stForecast member _humidity_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 09:57:38.908 +01:00 [VRB] Building constructor statement in type stForecast member _humidity_UNIT=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 09:57:38.939 +01:00 [VRB] Building constructor statement in type stForecast member AttributeName="";
+2020-02-26 09:57:39.059 +01:00 [VRB] Building constructor statement in type stWeatherData member _sunrise=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 09:57:39.060 +01:00 [VRB] Building constructor statement in type stWeatherData member _sunset=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 09:57:39.081 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast=newstForecast[40];
+2020-02-26 09:57:39.088 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[0]=newstForecast();
+2020-02-26 09:57:39.088 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[1]=newstForecast();
+2020-02-26 09:57:39.089 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[2]=newstForecast();
+2020-02-26 09:57:39.089 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[3]=newstForecast();
+2020-02-26 09:57:39.089 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[4]=newstForecast();
+2020-02-26 09:57:39.089 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[5]=newstForecast();
+2020-02-26 09:57:39.089 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[6]=newstForecast();
+2020-02-26 09:57:39.089 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[7]=newstForecast();
+2020-02-26 09:57:39.089 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[8]=newstForecast();
+2020-02-26 09:57:39.090 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[9]=newstForecast();
+2020-02-26 09:57:39.090 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[10]=newstForecast();
+2020-02-26 09:57:39.090 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[11]=newstForecast();
+2020-02-26 09:57:39.090 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[12]=newstForecast();
+2020-02-26 09:57:39.090 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[13]=newstForecast();
+2020-02-26 09:57:39.090 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[14]=newstForecast();
+2020-02-26 09:57:39.090 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[15]=newstForecast();
+2020-02-26 09:57:39.090 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[16]=newstForecast();
+2020-02-26 09:57:39.091 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[17]=newstForecast();
+2020-02-26 09:57:39.091 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[18]=newstForecast();
+2020-02-26 09:57:39.091 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[19]=newstForecast();
+2020-02-26 09:57:39.091 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[20]=newstForecast();
+2020-02-26 09:57:39.091 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[21]=newstForecast();
+2020-02-26 09:57:39.091 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[22]=newstForecast();
+2020-02-26 09:57:39.091 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[23]=newstForecast();
+2020-02-26 09:57:39.091 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[24]=newstForecast();
+2020-02-26 09:57:39.092 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[25]=newstForecast();
+2020-02-26 09:57:39.092 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[26]=newstForecast();
+2020-02-26 09:57:39.092 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[27]=newstForecast();
+2020-02-26 09:57:39.092 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[28]=newstForecast();
+2020-02-26 09:57:39.092 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[29]=newstForecast();
+2020-02-26 09:57:39.092 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[30]=newstForecast();
+2020-02-26 09:57:39.092 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[31]=newstForecast();
+2020-02-26 09:57:39.093 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[32]=newstForecast();
+2020-02-26 09:57:39.093 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[33]=newstForecast();
+2020-02-26 09:57:39.093 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[34]=newstForecast();
+2020-02-26 09:57:39.093 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[35]=newstForecast();
+2020-02-26 09:57:39.093 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[36]=newstForecast();
+2020-02-26 09:57:39.093 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[37]=newstForecast();
+2020-02-26 09:57:39.093 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[38]=newstForecast();
+2020-02-26 09:57:39.093 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[39]=newstForecast();
+2020-02-26 09:57:39.120 +01:00 [VRB] Building constructor statement in type stWeatherData member AttributeName="";
+2020-02-26 09:57:39.128 +01:00 [VRB] Building constructor statement in type MAIN member _WeatherData=newstWeatherData();
+2020-02-26 09:57:39.132 +01:00 [VRB] Building constructor statement in type MAIN member _bGetWeatherData=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 09:57:39.133 +01:00 [VRB] Building constructor statement in type MAIN member _uiSysTime=Vortex.Connector.IConnectorFactory.CreateULINT();
+2020-02-26 09:57:39.134 +01:00 [VRB] Building constructor statement in type MAIN member _actDateTime=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 09:57:39.134 +01:00 [VRB] Building constructor statement in type MAIN member AttributeName="";
+2020-02-26 09:57:39.230 +01:00 [INF] Compiling sources 'PLC'...
+2020-02-26 09:57:40.234 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stForecast.g.cs
+2020-02-26 09:57:40.252 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\MAIN.g.cs
+2020-02-26 09:57:40.252 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stWeatherData.g.cs
+2020-02-26 09:57:40.317 +01:00 [VRB] ----- Adding non existing type: PLCTwinController
+2020-02-26 09:57:40.322 +01:00 [VRB] Building constructor statement in type PLCTwinController member _MAIN=newMAIN();
+2020-02-26 09:57:40.322 +01:00 [VRB] Building constructor statement in type PLCTwinController member AttributeName="";
+2020-02-26 09:57:40.361 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\PLC.g.cs
+2020-02-26 09:57:40.406 +01:00 [VRB] ----- Adding non existing type: ST_LibVersion
+2020-02-26 09:57:40.406 +01:00 [VRB] ----- Adding non existing type: PlcAppSystemInfo
+2020-02-26 09:57:40.406 +01:00 [VRB] ----- Adding non existing type: PlcTaskSystemInfo
+2020-02-26 09:57:40.562 +01:00 [VRB] Creating localization for type PLC.stForecast
+2020-02-26 09:57:40.563 +01:00 [VRB] Creating localization for type PLC.stWeatherData
+2020-02-26 09:57:40.563 +01:00 [VRB] Creating localization for type PLC.MAIN
+2020-02-26 09:57:40.564 +01:00 [VRB] Creating localization for type PLC.PLCTwinController
+2020-02-26 09:57:40.564 +01:00 [VRB] Creating localization for type PLC.ST_LibVersion
+2020-02-26 09:57:40.564 +01:00 [VRB] Creating localization for type PLC.PlcAppSystemInfo
+2020-02-26 09:57:40.564 +01:00 [VRB] Creating localization for type PLC.PlcTaskSystemInfo
+2020-02-26 09:57:40.678 +01:00 [INF] >>>>>>I, Done
+2020-02-26 10:16:32.957 +01:00 [INF] Builder version : 0.106.0.0 / 0.106.0-alpha.7+Branch.develop.Sha.5090104d1941e034bb163d17f95aa56b30e77402
+2020-02-26 10:16:36.538 +01:00 [VRB] ----- Adding non existing type: stForecast
+2020-02-26 10:16:36.540 +01:00 [VRB] ----- Adding non existing type: stWeatherData
+2020-02-26 10:16:36.549 +01:00 [VRB] ----- Adding non existing type: MAIN
+2020-02-26 10:16:36.963 +01:00 [VRB] Building constructor statement in type stForecast member _timeFrom=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 10:16:36.995 +01:00 [VRB] Building constructor statement in type stForecast member _timeTo=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 10:16:36.996 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:36.998 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:36.998 +01:00 [VRB] Building constructor statement in type stForecast member _precipitation_type=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:36.999 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:37.000 +01:00 [VRB] Building constructor statement in type stForecast member _windDirection_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:37.001 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:37.001 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:37.002 +01:00 [VRB] Building constructor statement in type stForecast member _windSpeed_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:37.003 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:37.004 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:37.004 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_min=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:37.005 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_max=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:37.005 +01:00 [VRB] Building constructor statement in type stForecast member _temperature_feel_like=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:37.006 +01:00 [VRB] Building constructor statement in type stForecast member _pressure_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:37.006 +01:00 [VRB] Building constructor statement in type stForecast member _pressure_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:37.007 +01:00 [VRB] Building constructor statement in type stForecast member _humidity_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-02-26 10:16:37.007 +01:00 [VRB] Building constructor statement in type stForecast member _humidity_UNIT=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:37.035 +01:00 [VRB] Building constructor statement in type stForecast member AttributeName="";
+2020-02-26 10:16:37.155 +01:00 [VRB] Building constructor statement in type stWeatherData member _sunrise=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 10:16:37.155 +01:00 [VRB] Building constructor statement in type stWeatherData member _sunset=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 10:16:37.175 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast=newstForecast[40];
+2020-02-26 10:16:37.181 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[0]=newstForecast();
+2020-02-26 10:16:37.182 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[1]=newstForecast();
+2020-02-26 10:16:37.182 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[2]=newstForecast();
+2020-02-26 10:16:37.182 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[3]=newstForecast();
+2020-02-26 10:16:37.183 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[4]=newstForecast();
+2020-02-26 10:16:37.183 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[5]=newstForecast();
+2020-02-26 10:16:37.183 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[6]=newstForecast();
+2020-02-26 10:16:37.183 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[7]=newstForecast();
+2020-02-26 10:16:37.183 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[8]=newstForecast();
+2020-02-26 10:16:37.183 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[9]=newstForecast();
+2020-02-26 10:16:37.183 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[10]=newstForecast();
+2020-02-26 10:16:37.183 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[11]=newstForecast();
+2020-02-26 10:16:37.184 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[12]=newstForecast();
+2020-02-26 10:16:37.184 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[13]=newstForecast();
+2020-02-26 10:16:37.184 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[14]=newstForecast();
+2020-02-26 10:16:37.184 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[15]=newstForecast();
+2020-02-26 10:16:37.184 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[16]=newstForecast();
+2020-02-26 10:16:37.184 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[17]=newstForecast();
+2020-02-26 10:16:37.185 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[18]=newstForecast();
+2020-02-26 10:16:37.185 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[19]=newstForecast();
+2020-02-26 10:16:37.185 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[20]=newstForecast();
+2020-02-26 10:16:37.185 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[21]=newstForecast();
+2020-02-26 10:16:37.185 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[22]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[23]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[24]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[25]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[26]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[27]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[28]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[29]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[30]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[31]=newstForecast();
+2020-02-26 10:16:37.186 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[32]=newstForecast();
+2020-02-26 10:16:37.187 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[33]=newstForecast();
+2020-02-26 10:16:37.187 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[34]=newstForecast();
+2020-02-26 10:16:37.187 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[35]=newstForecast();
+2020-02-26 10:16:37.187 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[36]=newstForecast();
+2020-02-26 10:16:37.187 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[37]=newstForecast();
+2020-02-26 10:16:37.187 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[38]=newstForecast();
+2020-02-26 10:16:37.187 +01:00 [VRB] Building constructor statement in type stWeatherData member Forecast[39]=newstForecast();
+2020-02-26 10:16:37.221 +01:00 [VRB] Building constructor statement in type stWeatherData member AttributeName="";
+2020-02-26 10:16:37.232 +01:00 [VRB] Building constructor statement in type MAIN member _WeatherData=newstWeatherData();
+2020-02-26 10:16:37.233 +01:00 [VRB] Building constructor statement in type MAIN member _bGetWeatherData=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:37.236 +01:00 [WRN] >>>>>>"W","","Type 'TIMESTRUCT' declared in 'PLC.MAIN' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","PLC","MAIN","0","0"
+2020-02-26 10:16:37.236 +01:00 [VRB] Building constructor statement in type MAIN member _actDateTime=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 10:16:37.237 +01:00 [WRN] >>>>>>"W","","Type 'FB_LocalSystemTime' declared in 'PLC.MAIN' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","PLC","MAIN","0","0"
+2020-02-26 10:16:37.237 +01:00 [VRB] Building constructor statement in type MAIN member AttributeName="";
+2020-02-26 10:16:37.342 +01:00 [INF] Compiling sources 'PLC'...
+2020-02-26 10:16:38.299 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\MAIN.g.cs
+2020-02-26 10:16:38.314 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stForecast.g.cs
+2020-02-26 10:16:38.370 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stWeatherData.g.cs
+2020-02-26 10:16:38.427 +01:00 [VRB] ----- Adding non existing type: PLCTwinController
+2020-02-26 10:16:38.430 +01:00 [VRB] Building constructor statement in type PLCTwinController member _MAIN=newMAIN();
+2020-02-26 10:16:38.431 +01:00 [VRB] Building constructor statement in type PLCTwinController member AttributeName="";
+2020-02-26 10:16:38.468 +01:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\PLC.g.cs
+2020-02-26 10:16:38.503 +01:00 [VRB] ----- Adding non existing type: ADSREAD
+2020-02-26 10:16:38.503 +01:00 [VRB] ----- Adding non existing type: ADSWRITE
+2020-02-26 10:16:38.503 +01:00 [VRB] ----- Adding non existing type: ADSRDWRTEX
+2020-02-26 10:16:38.503 +01:00 [VRB] ----- Adding non existing type: FW_GetCpuCounter
+2020-02-26 10:16:38.503 +01:00 [VRB] ----- Adding non existing type: GETCPUCOUNTER
+2020-02-26 10:16:38.503 +01:00 [VRB] ----- Adding non existing type: E_WATCHDOG_TIME_CONFIG
+2020-02-26 10:16:38.516 +01:00 [VRB] ----- Adding non existing type: ST_AmsRouteEntry
+2020-02-26 10:16:38.516 +01:00 [VRB] ----- Adding non existing type: T_Arg
+2020-02-26 10:16:38.516 +01:00 [VRB] ----- Adding non existing type: T_ULARGE_INTEGER
+2020-02-26 10:16:38.516 +01:00 [VRB] ----- Adding non existing type: TIMESTRUCT
+2020-02-26 10:16:38.516 +01:00 [VRB] ----- Adding non existing type: ST_TimeZoneInformation
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: NT_GetTime
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: ST_AmsGetTimeZoneInformation
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: FB_GetTimeZoneInformation
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: ST_HKeySrvRead
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: FB_RegQueryValue
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: NT_SetTimeToRTCTime
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: RTC_EX2
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: FB_LocalSystemTime
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: E_HashPrefixTypes
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: E_SBCSType
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: E_RouteTransportType
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: E_ArgType
+2020-02-26 10:16:38.517 +01:00 [VRB] ----- Adding non existing type: E_TimeZoneID
+2020-02-26 10:16:38.522 +01:00 [VRB] ----- Adding non existing type: R_TRIG
+2020-02-26 10:16:38.522 +01:00 [VRB] ----- Adding non existing type: TON
+2020-02-26 10:16:38.527 +01:00 [VRB] ----- Adding non existing type: ST_LibVersion
+2020-02-26 10:16:38.528 +01:00 [VRB] ----- Adding non existing type: PlcAppSystemInfo
+2020-02-26 10:16:38.528 +01:00 [VRB] ----- Adding non existing type: PlcTaskSystemInfo
+2020-02-26 10:16:38.615 +01:00 [INF] Compiling sources 'Tc2_System'...
+2020-02-26 10:16:38.635 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_System.ADSREAD' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSREAD","0","0"
+2020-02-26 10:16:38.635 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsPort' declared in 'Tc2_System.ADSREAD' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSREAD","0","0"
+2020-02-26 10:16:38.636 +01:00 [VRB] Building constructor statement in type ADSREAD member _IDXGRP=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.636 +01:00 [VRB] Building constructor statement in type ADSREAD member _IDXOFFS=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.636 +01:00 [VRB] Building constructor statement in type ADSREAD member _LEN=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.637 +01:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_System.ADSREAD' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSREAD","0","0"
+2020-02-26 10:16:38.637 +01:00 [VRB] Building constructor statement in type ADSREAD member _READ=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.637 +01:00 [VRB] Building constructor statement in type ADSREAD member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:38.637 +01:00 [VRB] Building constructor statement in type ADSREAD member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.637 +01:00 [VRB] Building constructor statement in type ADSREAD member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.637 +01:00 [VRB] Building constructor statement in type ADSREAD member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.638 +01:00 [VRB] Building constructor statement in type ADSREAD member AttributeName="";
+2020-02-26 10:16:38.658 +01:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\ADSREAD.g.cs
+2020-02-26 10:16:38.674 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_System.ADSWRITE' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSWRITE","0","0"
+2020-02-26 10:16:38.674 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsPort' declared in 'Tc2_System.ADSWRITE' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSWRITE","0","0"
+2020-02-26 10:16:38.674 +01:00 [VRB] Building constructor statement in type ADSWRITE member _IDXGRP=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.675 +01:00 [VRB] Building constructor statement in type ADSWRITE member _IDXOFFS=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.675 +01:00 [VRB] Building constructor statement in type ADSWRITE member _LEN=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.675 +01:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_System.ADSWRITE' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSWRITE","0","0"
+2020-02-26 10:16:38.675 +01:00 [VRB] Building constructor statement in type ADSWRITE member _WRITE=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.675 +01:00 [VRB] Building constructor statement in type ADSWRITE member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:38.675 +01:00 [VRB] Building constructor statement in type ADSWRITE member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.675 +01:00 [VRB] Building constructor statement in type ADSWRITE member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.675 +01:00 [VRB] Building constructor statement in type ADSWRITE member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.678 +01:00 [VRB] Building constructor statement in type ADSWRITE member AttributeName="";
+2020-02-26 10:16:38.699 +01:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\ADSWRITE.g.cs
+2020-02-26 10:16:38.735 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_System.ADSRDWRTEX' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSRDWRTEX","0","0"
+2020-02-26 10:16:38.737 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsPort' declared in 'Tc2_System.ADSRDWRTEX' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSRDWRTEX","0","0"
+2020-02-26 10:16:38.737 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _IDXGRP=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.738 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _IDXOFFS=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.738 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _WRITELEN=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.738 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _READLEN=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.738 +01:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_System.ADSRDWRTEX' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSRDWRTEX","0","0"
+2020-02-26 10:16:38.739 +01:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_System.ADSRDWRTEX' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSRDWRTEX","0","0"
+2020-02-26 10:16:38.739 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _WRTRD=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.739 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:38.739 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.739 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:38.739 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.739 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member _COUNT_R=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.743 +01:00 [VRB] Building constructor statement in type ADSRDWRTEX member AttributeName="";
+2020-02-26 10:16:38.778 +01:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\ADSRDWRTEX.g.cs
+2020-02-26 10:16:38.793 +01:00 [VRB] Building constructor statement in type FW_GetCpuCounter member _dwCpuCntLo=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.793 +01:00 [VRB] Building constructor statement in type FW_GetCpuCounter member _dwCpuCntHi=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.793 +01:00 [VRB] Building constructor statement in type FW_GetCpuCounter member AttributeName="";
+2020-02-26 10:16:38.808 +01:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\FW_GetCpuCounter.g.cs
+2020-02-26 10:16:38.823 +01:00 [VRB] Building constructor statement in type GETCPUCOUNTER member _cpuCntLoDW=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.823 +01:00 [VRB] Building constructor statement in type GETCPUCOUNTER member _cpuCntHiDW=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.824 +01:00 [VRB] Building constructor statement in type GETCPUCOUNTER member _fbGetCpuCounter=newTc2_System.FW_GetCpuCounter();
+2020-02-26 10:16:38.824 +01:00 [VRB] Building constructor statement in type GETCPUCOUNTER member AttributeName="";
+2020-02-26 10:16:38.859 +01:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\GETCPUCOUNTER.g.cs
+2020-02-26 10:16:38.927 +01:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\E_WATCHDOG_TIME_CONFIG.g.cs
+2020-02-26 10:16:38.944 +01:00 [INF] Compiling sources 'Tc2_Utilities'...
+2020-02-26 10:16:38.948 +01:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _sName=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:38.949 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.ST_AmsRouteEntry' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","ST_AmsRouteEntry","0","0"
+2020-02-26 10:16:38.949 +01:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _sAddress=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:38.953 +01:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _eTransport=Vortex.Connector.IConnectorFactory.CreateUINT();
+2020-02-26 10:16:38.954 +01:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _tTimeout=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:38.955 +01:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _dwFlags=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:38.956 +01:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member AttributeName="";
+2020-02-26 10:16:38.971 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\ST_AmsRouteEntry.g.cs
+2020-02-26 10:16:38.986 +01:00 [VRB] Building constructor statement in type T_Arg member _eType=Vortex.Connector.IConnectorFactory.CreateINT();
+2020-02-26 10:16:38.987 +01:00 [VRB] Building constructor statement in type T_Arg member _cbLen=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:38.988 +01:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_Utilities.T_Arg' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","T_Arg","0","0"
+2020-02-26 10:16:38.988 +01:00 [VRB] Building constructor statement in type T_Arg member AttributeName="";
+2020-02-26 10:16:39.001 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\T_Arg.g.cs
+2020-02-26 10:16:39.013 +01:00 [VRB] Building constructor statement in type T_ULARGE_INTEGER member _dwLowPart=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.014 +01:00 [VRB] Building constructor statement in type T_ULARGE_INTEGER member _dwHighPart=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.015 +01:00 [VRB] Building constructor statement in type T_ULARGE_INTEGER member AttributeName="";
+2020-02-26 10:16:39.045 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\T_ULARGE_INTEGER.g.cs
+2020-02-26 10:16:39.058 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member _wYear=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-02-26 10:16:39.059 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member _wMonth=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-02-26 10:16:39.060 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member _wDayOfWeek=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-02-26 10:16:39.060 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member _wDay=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-02-26 10:16:39.061 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member _wHour=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-02-26 10:16:39.061 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member _wMinute=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-02-26 10:16:39.062 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member _wSecond=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-02-26 10:16:39.063 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member _wMilliseconds=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-02-26 10:16:39.063 +01:00 [VRB] Building constructor statement in type TIMESTRUCT member AttributeName="";
+2020-02-26 10:16:39.081 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\TIMESTRUCT.g.cs
+2020-02-26 10:16:39.096 +01:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _bias=Vortex.Connector.IConnectorFactory.CreateDINT();
+2020-02-26 10:16:39.097 +01:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _standardName=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:39.101 +01:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _standardDate=newTc2_Utilities.TIMESTRUCT();
+2020-02-26 10:16:39.102 +01:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _standardBias=Vortex.Connector.IConnectorFactory.CreateDINT();
+2020-02-26 10:16:39.103 +01:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _daylightName=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-02-26 10:16:39.103 +01:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _daylightDate=newTc2_Utilities.TIMESTRUCT();
+2020-02-26 10:16:39.104 +01:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _daylightBias=Vortex.Connector.IConnectorFactory.CreateDINT();
+2020-02-26 10:16:39.104 +01:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member AttributeName="";
+2020-02-26 10:16:39.127 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\ST_TimeZoneInformation.g.cs
+2020-02-26 10:16:39.142 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.NT_GetTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_GetTime","0","0"
+2020-02-26 10:16:39.142 +01:00 [VRB] Building constructor statement in type NT_GetTime member _START=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.143 +01:00 [VRB] Building constructor statement in type NT_GetTime member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:39.143 +01:00 [VRB] Building constructor statement in type NT_GetTime member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.144 +01:00 [VRB] Building constructor statement in type NT_GetTime member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.144 +01:00 [VRB] Building constructor statement in type NT_GetTime member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.145 +01:00 [VRB] Building constructor statement in type NT_GetTime member _TIMESTR=newTc2_Utilities.TIMESTRUCT();
+2020-02-26 10:16:39.145 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.ADSREAD' declared in 'Tc2_Utilities.NT_GetTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_GetTime","0","0"
+2020-02-26 10:16:39.147 +01:00 [VRB] Building constructor statement in type NT_GetTime member AttributeName="";
+2020-02-26 10:16:39.158 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\NT_GetTime.g.cs
+2020-02-26 10:16:39.175 +01:00 [VRB] Building constructor statement in type ST_AmsGetTimeZoneInformation member _tzInfo=newTc2_Utilities.ST_TimeZoneInformation();
+2020-02-26 10:16:39.175 +01:00 [VRB] Building constructor statement in type ST_AmsGetTimeZoneInformation member _apiResult=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.175 +01:00 [VRB] Building constructor statement in type ST_AmsGetTimeZoneInformation member AttributeName="";
+2020-02-26 10:16:39.186 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\ST_AmsGetTimeZoneInformation.g.cs
+2020-02-26 10:16:39.197 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.FB_GetTimeZoneInformation' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_GetTimeZoneInformation","0","0"
+2020-02-26 10:16:39.198 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _bExecute=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.198 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _tTimeout=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:39.199 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _bBusy=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.199 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _bError=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.200 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _nErrID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.201 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _tzID=Vortex.Connector.IConnectorFactory.CreateINT();
+2020-02-26 10:16:39.202 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _tzInfo=newTc2_Utilities.ST_TimeZoneInformation();
+2020-02-26 10:16:39.202 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.ADSREAD' declared in 'Tc2_Utilities.FB_GetTimeZoneInformation' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_GetTimeZoneInformation","0","0"
+2020-02-26 10:16:39.202 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.FB_GetTimeZoneInformation' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_GetTimeZoneInformation","0","0"
+2020-02-26 10:16:39.203 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _state=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-02-26 10:16:39.203 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _res=newTc2_Utilities.ST_AmsGetTimeZoneInformation();
+2020-02-26 10:16:39.204 +01:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member AttributeName="";
+2020-02-26 10:16:39.234 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\FB_GetTimeZoneInformation.g.cs
+2020-02-26 10:16:39.248 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_MaxString' declared in 'Tc2_Utilities.ST_HKeySrvRead' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","ST_HKeySrvRead","0","0"
+2020-02-26 10:16:39.248 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_MaxString' declared in 'Tc2_Utilities.ST_HKeySrvRead' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","ST_HKeySrvRead","0","0"
+2020-02-26 10:16:39.248 +01:00 [VRB] Building constructor statement in type ST_HKeySrvRead member AttributeName="";
+2020-02-26 10:16:39.257 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\ST_HKeySrvRead.g.cs
+2020-02-26 10:16:39.270 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-02-26 10:16:39.270 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_MaxString' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-02-26 10:16:39.270 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_MaxString' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-02-26 10:16:39.271 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _cbData=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.271 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _pData=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-02-26 10:16:39.272 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _bExecute=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.272 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _tTimeOut=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:39.273 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _bBusy=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.273 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _bError=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.274 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _nErrId=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.274 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _cbRead=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.275 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.ADSRDWRTEX' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-02-26 10:16:39.275 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-02-26 10:16:39.275 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _state=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-02-26 10:16:39.275 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _s1Len=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.276 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _s2Len=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.278 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _ptr=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-02-26 10:16:39.279 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _cbBuff=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.280 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member _tmpBuff=newTc2_Utilities.ST_HKeySrvRead();
+2020-02-26 10:16:39.280 +01:00 [VRB] Building constructor statement in type FB_RegQueryValue member AttributeName="";
+2020-02-26 10:16:39.322 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\FB_RegQueryValue.g.cs
+2020-02-26 10:16:39.337 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.NT_SetTimeToRTCTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_SetTimeToRTCTime","0","0"
+2020-02-26 10:16:39.337 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _SET=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.338 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:39.338 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.339 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.339 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-02-26 10:16:39.341 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.ADSWRITE' declared in 'Tc2_Utilities.NT_SetTimeToRTCTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_SetTimeToRTCTime","0","0"
+2020-02-26 10:16:39.341 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _fbRegQuery=newTc2_Utilities.FB_RegQueryValue();
+2020-02-26 10:16:39.341 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.NT_SetTimeToRTCTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_SetTimeToRTCTime","0","0"
+2020-02-26 10:16:39.342 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _bTmp=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.342 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _state=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-02-26 10:16:39.343 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _bInit=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.343 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _numOfCPUs=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.343 +01:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member AttributeName="";
+2020-02-26 10:16:39.367 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\NT_SetTimeToRTCTime.g.cs
+2020-02-26 10:16:39.383 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _EN=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.384 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _PDT=newTc2_Utilities.TIMESTRUCT();
+2020-02-26 10:16:39.384 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _PMICRO=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.385 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _Q=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.385 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _CDT=newTc2_Utilities.TIMESTRUCT();
+2020-02-26 10:16:39.386 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _CMICRO=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.386 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.GETCPUCOUNTER' declared in 'Tc2_Utilities.RTC_EX2' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","RTC_EX2","0","0"
+2020-02-26 10:16:39.386 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.RTC_EX2' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","RTC_EX2","0","0"
+2020-02-26 10:16:39.386 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _oldTick=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.387 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _currTick=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.387 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _nanoDiff=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.388 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _nanoRest=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.388 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _secDiff=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.389 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _dateTime=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-02-26 10:16:39.390 +01:00 [VRB] Building constructor statement in type RTC_EX2 member _bInitialized=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.390 +01:00 [VRB] Building constructor statement in type RTC_EX2 member AttributeName="";
+2020-02-26 10:16:39.422 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\RTC_EX2.g.cs
+2020-02-26 10:16:39.439 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.FB_LocalSystemTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_LocalSystemTime","0","0"
+2020-02-26 10:16:39.441 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _bEnable=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.441 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _dwCycle=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.441 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _dwOpt=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.442 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _tTimeout=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:39.442 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _bValid=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.442 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _systemTime=newTc2_Utilities.TIMESTRUCT();
+2020-02-26 10:16:39.445 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _tzID=Vortex.Connector.IConnectorFactory.CreateINT();
+2020-02-26 10:16:39.445 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.FB_LocalSystemTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_LocalSystemTime","0","0"
+2020-02-26 10:16:39.445 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _state=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-02-26 10:16:39.446 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _fbNT=newTc2_Utilities.NT_GetTime();
+2020-02-26 10:16:39.446 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _fbTZ=newTc2_Utilities.FB_GetTimeZoneInformation();
+2020-02-26 10:16:39.446 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _fbSET=newTc2_Utilities.NT_SetTimeToRTCTime();
+2020-02-26 10:16:39.447 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _fbRTC=newTc2_Utilities.RTC_EX2();
+2020-02-26 10:16:39.447 +01:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.TON' declared in 'Tc2_Utilities.FB_LocalSystemTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_LocalSystemTime","0","0"
+2020-02-26 10:16:39.447 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _nSync=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-02-26 10:16:39.447 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _bNotSup=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.447 +01:00 [VRB] Building constructor statement in type FB_LocalSystemTime member AttributeName="";
+2020-02-26 10:16:39.481 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\FB_LocalSystemTime.g.cs
+2020-02-26 10:16:39.500 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_HashPrefixTypes.g.cs
+2020-02-26 10:16:39.513 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_SBCSType.g.cs
+2020-02-26 10:16:39.526 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_RouteTransportType.g.cs
+2020-02-26 10:16:39.541 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_ArgType.g.cs
+2020-02-26 10:16:39.551 +01:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_TimeZoneID.g.cs
+2020-02-26 10:16:39.576 +01:00 [INF] Compiling sources 'Tc2_Standard'...
+2020-02-26 10:16:39.578 +01:00 [VRB] Building constructor statement in type R_TRIG member _CLK=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.578 +01:00 [VRB] Building constructor statement in type R_TRIG member _Q=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.578 +01:00 [VRB] Building constructor statement in type R_TRIG member _M=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.578 +01:00 [VRB] Building constructor statement in type R_TRIG member AttributeName="";
+2020-02-26 10:16:39.593 +01:00 [VRB] Generating source for project: Tc2_Standard.Tc2_Standard in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Standard\src\singles\R_TRIG.g.cs
+2020-02-26 10:16:39.613 +01:00 [VRB] Building constructor statement in type TON member _IN=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.613 +01:00 [VRB] Building constructor statement in type TON member _PT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:39.613 +01:00 [VRB] Building constructor statement in type TON member _Q=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.617 +01:00 [VRB] Building constructor statement in type TON member _ET=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:39.617 +01:00 [VRB] Building constructor statement in type TON member _M=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-02-26 10:16:39.618 +01:00 [VRB] Building constructor statement in type TON member _StartTime=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-02-26 10:16:39.618 +01:00 [VRB] Building constructor statement in type TON member AttributeName="";
+2020-02-26 10:16:39.636 +01:00 [VRB] Generating source for project: Tc2_Standard.Tc2_Standard in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Standard\src\singles\TON.g.cs
+2020-02-26 10:16:39.680 +01:00 [VRB] Creating localization for type PLC.stForecast
+2020-02-26 10:16:39.682 +01:00 [VRB] Creating localization for type PLC.stWeatherData
+2020-02-26 10:16:39.682 +01:00 [VRB] Creating localization for type PLC.MAIN
+2020-02-26 10:16:39.682 +01:00 [VRB] Creating localization for type PLC.PLCTwinController
+2020-02-26 10:16:39.682 +01:00 [VRB] Creating localization for type PLC.ST_LibVersion
+2020-02-26 10:16:39.682 +01:00 [VRB] Creating localization for type PLC.PlcAppSystemInfo
+2020-02-26 10:16:39.682 +01:00 [VRB] Creating localization for type PLC.PlcTaskSystemInfo
+2020-02-26 10:16:39.905 +01:00 [INF] >>>>>>I, Done
+2020-03-30 14:43:00.986 +02:00 [INF] Builder version : 0.106.0.0 / 0.106.0-alpha.7+Branch.develop.Sha.5090104d1941e034bb163d17f95aa56b30e77402
+2020-03-30 14:43:05.617 +02:00 [VRB] ----- Adding non existing type: stForecast
+2020-03-30 14:43:05.618 +02:00 [VRB] ----- Adding non existing type: stWeatherData
+2020-03-30 14:43:05.629 +02:00 [VRB] ----- Adding non existing type: MAIN
+2020-03-30 14:43:06.034 +02:00 [VRB] Building constructor statement in type stForecast member _timeFrom=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-03-30 14:43:06.063 +02:00 [VRB] Building constructor statement in type stForecast member _timeTo=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-03-30 14:43:06.064 +02:00 [VRB] Building constructor statement in type stForecast member _precipitation_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:06.067 +02:00 [VRB] Building constructor statement in type stForecast member _precipitation_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.068 +02:00 [VRB] Building constructor statement in type stForecast member _precipitation_type=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:06.069 +02:00 [VRB] Building constructor statement in type stForecast member _windDirection_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.070 +02:00 [VRB] Building constructor statement in type stForecast member _windDirection_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:06.072 +02:00 [VRB] Building constructor statement in type stForecast member _windSpeed_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.073 +02:00 [VRB] Building constructor statement in type stForecast member _windSpeed_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:06.074 +02:00 [VRB] Building constructor statement in type stForecast member _windSpeed_name=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:06.075 +02:00 [VRB] Building constructor statement in type stForecast member _temperature_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.077 +02:00 [VRB] Building constructor statement in type stForecast member _temperature_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:06.077 +02:00 [VRB] Building constructor statement in type stForecast member _temperature_min=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.079 +02:00 [VRB] Building constructor statement in type stForecast member _temperature_max=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.080 +02:00 [VRB] Building constructor statement in type stForecast member _temperature_feel_like=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.082 +02:00 [VRB] Building constructor statement in type stForecast member _pressure_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.083 +02:00 [VRB] Building constructor statement in type stForecast member _pressure_unit=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:06.084 +02:00 [VRB] Building constructor statement in type stForecast member _humidity_value=Vortex.Connector.IConnectorFactory.CreateREAL();
+2020-03-30 14:43:06.093 +02:00 [VRB] Building constructor statement in type stForecast member _humidity_UNIT=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:06.125 +02:00 [VRB] Building constructor statement in type stForecast member AttributeName="";
+2020-03-30 14:43:06.241 +02:00 [VRB] Building constructor statement in type stWeatherData member _sunrise=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-03-30 14:43:06.242 +02:00 [VRB] Building constructor statement in type stWeatherData member _sunset=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-03-30 14:43:06.265 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast=newstForecast[40];
+2020-03-30 14:43:06.271 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[0]=newstForecast();
+2020-03-30 14:43:06.271 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[1]=newstForecast();
+2020-03-30 14:43:06.271 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[2]=newstForecast();
+2020-03-30 14:43:06.271 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[3]=newstForecast();
+2020-03-30 14:43:06.271 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[4]=newstForecast();
+2020-03-30 14:43:06.275 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[5]=newstForecast();
+2020-03-30 14:43:06.275 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[6]=newstForecast();
+2020-03-30 14:43:06.278 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[7]=newstForecast();
+2020-03-30 14:43:06.278 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[8]=newstForecast();
+2020-03-30 14:43:06.278 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[9]=newstForecast();
+2020-03-30 14:43:06.278 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[10]=newstForecast();
+2020-03-30 14:43:06.281 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[11]=newstForecast();
+2020-03-30 14:43:06.281 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[12]=newstForecast();
+2020-03-30 14:43:06.282 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[13]=newstForecast();
+2020-03-30 14:43:06.282 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[14]=newstForecast();
+2020-03-30 14:43:06.284 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[15]=newstForecast();
+2020-03-30 14:43:06.284 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[16]=newstForecast();
+2020-03-30 14:43:06.284 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[17]=newstForecast();
+2020-03-30 14:43:06.285 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[18]=newstForecast();
+2020-03-30 14:43:06.285 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[19]=newstForecast();
+2020-03-30 14:43:06.286 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[20]=newstForecast();
+2020-03-30 14:43:06.287 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[21]=newstForecast();
+2020-03-30 14:43:06.287 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[22]=newstForecast();
+2020-03-30 14:43:06.287 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[23]=newstForecast();
+2020-03-30 14:43:06.289 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[24]=newstForecast();
+2020-03-30 14:43:06.289 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[25]=newstForecast();
+2020-03-30 14:43:06.290 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[26]=newstForecast();
+2020-03-30 14:43:06.291 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[27]=newstForecast();
+2020-03-30 14:43:06.291 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[28]=newstForecast();
+2020-03-30 14:43:06.291 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[29]=newstForecast();
+2020-03-30 14:43:06.294 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[30]=newstForecast();
+2020-03-30 14:43:06.294 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[31]=newstForecast();
+2020-03-30 14:43:06.294 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[32]=newstForecast();
+2020-03-30 14:43:06.294 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[33]=newstForecast();
+2020-03-30 14:43:06.296 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[34]=newstForecast();
+2020-03-30 14:43:06.296 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[35]=newstForecast();
+2020-03-30 14:43:06.296 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[36]=newstForecast();
+2020-03-30 14:43:06.296 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[37]=newstForecast();
+2020-03-30 14:43:06.298 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[38]=newstForecast();
+2020-03-30 14:43:06.298 +02:00 [VRB] Building constructor statement in type stWeatherData member Forecast[39]=newstForecast();
+2020-03-30 14:43:06.316 +02:00 [VRB] Building constructor statement in type stWeatherData member AttributeName="";
+2020-03-30 14:43:06.324 +02:00 [VRB] Building constructor statement in type MAIN member _WeatherData=newstWeatherData();
+2020-03-30 14:43:06.326 +02:00 [VRB] Building constructor statement in type MAIN member _bGetWeatherData=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:06.332 +02:00 [WRN] >>>>>>"W","","Type 'TIMESTRUCT' declared in 'PLC.MAIN' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","PLC","MAIN","0","0"
+2020-03-30 14:43:06.333 +02:00 [VRB] Building constructor statement in type MAIN member _actDateTime=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-03-30 14:43:06.333 +02:00 [WRN] >>>>>>"W","","Type 'FB_LocalSystemTime' declared in 'PLC.MAIN' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","PLC","MAIN","0","0"
+2020-03-30 14:43:06.333 +02:00 [VRB] Building constructor statement in type MAIN member AttributeName="";
+2020-03-30 14:43:06.418 +02:00 [INF] Compiling sources 'PLC'...
+2020-03-30 14:43:07.345 +02:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\MAIN.g.cs
+2020-03-30 14:43:07.390 +02:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stForecast.g.cs
+2020-03-30 14:43:07.411 +02:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\singles\stWeatherData.g.cs
+2020-03-30 14:43:07.493 +02:00 [VRB] ----- Adding non existing type: PLCTwinController
+2020-03-30 14:43:07.499 +02:00 [VRB] Building constructor statement in type PLCTwinController member _MAIN=newMAIN();
+2020-03-30 14:43:07.499 +02:00 [VRB] Building constructor statement in type PLCTwinController member AttributeName="";
+2020-03-30 14:43:07.533 +02:00 [VRB] Generating source for project: PLC.PLC in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\src\PLC.g.cs
+2020-03-30 14:43:07.579 +02:00 [VRB] ----- Adding non existing type: ADSREAD
+2020-03-30 14:43:07.581 +02:00 [VRB] ----- Adding non existing type: ADSWRITE
+2020-03-30 14:43:07.581 +02:00 [VRB] ----- Adding non existing type: ADSRDWRTEX
+2020-03-30 14:43:07.581 +02:00 [VRB] ----- Adding non existing type: FW_GetCpuCounter
+2020-03-30 14:43:07.581 +02:00 [VRB] ----- Adding non existing type: GETCPUCOUNTER
+2020-03-30 14:43:07.581 +02:00 [VRB] ----- Adding non existing type: E_WATCHDOG_TIME_CONFIG
+2020-03-30 14:43:07.585 +02:00 [VRB] ----- Adding non existing type: ST_AmsRouteEntry
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: T_Arg
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: T_ULARGE_INTEGER
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: TIMESTRUCT
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: ST_TimeZoneInformation
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: NT_GetTime
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: ST_AmsGetTimeZoneInformation
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: FB_GetTimeZoneInformation
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: ST_HKeySrvRead
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: FB_RegQueryValue
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: NT_SetTimeToRTCTime
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: RTC_EX2
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: FB_LocalSystemTime
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: E_HashPrefixTypes
+2020-03-30 14:43:07.586 +02:00 [VRB] ----- Adding non existing type: E_SBCSType
+2020-03-30 14:43:07.587 +02:00 [VRB] ----- Adding non existing type: E_RouteTransportType
+2020-03-30 14:43:07.593 +02:00 [VRB] ----- Adding non existing type: E_ArgType
+2020-03-30 14:43:07.593 +02:00 [VRB] ----- Adding non existing type: E_TimeZoneID
+2020-03-30 14:43:07.609 +02:00 [VRB] ----- Adding non existing type: R_TRIG
+2020-03-30 14:43:07.609 +02:00 [VRB] ----- Adding non existing type: TON
+2020-03-30 14:43:07.613 +02:00 [VRB] ----- Adding non existing type: ST_LibVersion
+2020-03-30 14:43:07.613 +02:00 [VRB] ----- Adding non existing type: PlcAppSystemInfo
+2020-03-30 14:43:07.613 +02:00 [VRB] ----- Adding non existing type: PlcTaskSystemInfo
+2020-03-30 14:43:07.698 +02:00 [INF] Compiling sources 'Tc2_System'...
+2020-03-30 14:43:07.704 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_System.ADSREAD' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSREAD","0","0"
+2020-03-30 14:43:07.705 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsPort' declared in 'Tc2_System.ADSREAD' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSREAD","0","0"
+2020-03-30 14:43:07.705 +02:00 [VRB] Building constructor statement in type ADSREAD member _IDXGRP=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.706 +02:00 [VRB] Building constructor statement in type ADSREAD member _IDXOFFS=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.708 +02:00 [VRB] Building constructor statement in type ADSREAD member _LEN=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.709 +02:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_System.ADSREAD' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSREAD","0","0"
+2020-03-30 14:43:07.710 +02:00 [VRB] Building constructor statement in type ADSREAD member _READ=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.710 +02:00 [VRB] Building constructor statement in type ADSREAD member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:07.712 +02:00 [VRB] Building constructor statement in type ADSREAD member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.713 +02:00 [VRB] Building constructor statement in type ADSREAD member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.715 +02:00 [VRB] Building constructor statement in type ADSREAD member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.716 +02:00 [VRB] Building constructor statement in type ADSREAD member AttributeName="";
+2020-03-30 14:43:07.730 +02:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\ADSREAD.g.cs
+2020-03-30 14:43:07.742 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_System.ADSWRITE' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSWRITE","0","0"
+2020-03-30 14:43:07.742 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsPort' declared in 'Tc2_System.ADSWRITE' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSWRITE","0","0"
+2020-03-30 14:43:07.742 +02:00 [VRB] Building constructor statement in type ADSWRITE member _IDXGRP=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.742 +02:00 [VRB] Building constructor statement in type ADSWRITE member _IDXOFFS=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.746 +02:00 [VRB] Building constructor statement in type ADSWRITE member _LEN=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.746 +02:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_System.ADSWRITE' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSWRITE","0","0"
+2020-03-30 14:43:07.746 +02:00 [VRB] Building constructor statement in type ADSWRITE member _WRITE=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.746 +02:00 [VRB] Building constructor statement in type ADSWRITE member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:07.746 +02:00 [VRB] Building constructor statement in type ADSWRITE member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.746 +02:00 [VRB] Building constructor statement in type ADSWRITE member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.748 +02:00 [VRB] Building constructor statement in type ADSWRITE member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.748 +02:00 [VRB] Building constructor statement in type ADSWRITE member AttributeName="";
+2020-03-30 14:43:07.812 +02:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\ADSWRITE.g.cs
+2020-03-30 14:43:07.828 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_System.ADSRDWRTEX' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSRDWRTEX","0","0"
+2020-03-30 14:43:07.829 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsPort' declared in 'Tc2_System.ADSRDWRTEX' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSRDWRTEX","0","0"
+2020-03-30 14:43:07.829 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _IDXGRP=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.829 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _IDXOFFS=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.830 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _WRITELEN=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.832 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _READLEN=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.834 +02:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_System.ADSRDWRTEX' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSRDWRTEX","0","0"
+2020-03-30 14:43:07.834 +02:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_System.ADSRDWRTEX' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_System","ADSRDWRTEX","0","0"
+2020-03-30 14:43:07.834 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _WRTRD=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.834 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:07.834 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.834 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:07.834 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.834 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member _COUNT_R=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.834 +02:00 [VRB] Building constructor statement in type ADSRDWRTEX member AttributeName="";
+2020-03-30 14:43:07.858 +02:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\ADSRDWRTEX.g.cs
+2020-03-30 14:43:07.899 +02:00 [VRB] Building constructor statement in type FW_GetCpuCounter member _dwCpuCntLo=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.901 +02:00 [VRB] Building constructor statement in type FW_GetCpuCounter member _dwCpuCntHi=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.903 +02:00 [VRB] Building constructor statement in type FW_GetCpuCounter member AttributeName="";
+2020-03-30 14:43:07.911 +02:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\FW_GetCpuCounter.g.cs
+2020-03-30 14:43:07.927 +02:00 [VRB] Building constructor statement in type GETCPUCOUNTER member _cpuCntLoDW=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.929 +02:00 [VRB] Building constructor statement in type GETCPUCOUNTER member _cpuCntHiDW=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:07.939 +02:00 [VRB] Building constructor statement in type GETCPUCOUNTER member _fbGetCpuCounter=newTc2_System.FW_GetCpuCounter();
+2020-03-30 14:43:07.941 +02:00 [VRB] Building constructor statement in type GETCPUCOUNTER member AttributeName="";
+2020-03-30 14:43:07.967 +02:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\GETCPUCOUNTER.g.cs
+2020-03-30 14:43:08.019 +02:00 [VRB] Generating source for project: Tc2_System.Tc2_System in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_System\src\singles\E_WATCHDOG_TIME_CONFIG.g.cs
+2020-03-30 14:43:08.039 +02:00 [INF] Compiling sources 'Tc2_Utilities'...
+2020-03-30 14:43:08.043 +02:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _sName=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:08.043 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.ST_AmsRouteEntry' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","ST_AmsRouteEntry","0","0"
+2020-03-30 14:43:08.045 +02:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _sAddress=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:08.051 +02:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _eTransport=Vortex.Connector.IConnectorFactory.CreateUINT();
+2020-03-30 14:43:08.051 +02:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _tTimeout=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.053 +02:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member _dwFlags=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.053 +02:00 [VRB] Building constructor statement in type ST_AmsRouteEntry member AttributeName="";
+2020-03-30 14:43:08.067 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\ST_AmsRouteEntry.g.cs
+2020-03-30 14:43:08.081 +02:00 [VRB] Building constructor statement in type T_Arg member _eType=Vortex.Connector.IConnectorFactory.CreateINT();
+2020-03-30 14:43:08.081 +02:00 [VRB] Building constructor statement in type T_Arg member _cbLen=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.081 +02:00 [WRN] >>>>>>"W","","Type 'PVOID' declared in 'Tc2_Utilities.T_Arg' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","T_Arg","0","0"
+2020-03-30 14:43:08.081 +02:00 [VRB] Building constructor statement in type T_Arg member AttributeName="";
+2020-03-30 14:43:08.120 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\T_Arg.g.cs
+2020-03-30 14:43:08.130 +02:00 [VRB] Building constructor statement in type T_ULARGE_INTEGER member _dwLowPart=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.131 +02:00 [VRB] Building constructor statement in type T_ULARGE_INTEGER member _dwHighPart=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.134 +02:00 [VRB] Building constructor statement in type T_ULARGE_INTEGER member AttributeName="";
+2020-03-30 14:43:08.142 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\T_ULARGE_INTEGER.g.cs
+2020-03-30 14:43:08.152 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member _wYear=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-03-30 14:43:08.154 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member _wMonth=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-03-30 14:43:08.154 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member _wDayOfWeek=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-03-30 14:43:08.156 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member _wDay=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-03-30 14:43:08.157 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member _wHour=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-03-30 14:43:08.158 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member _wMinute=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-03-30 14:43:08.159 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member _wSecond=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-03-30 14:43:08.160 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member _wMilliseconds=Vortex.Connector.IConnectorFactory.CreateWORD();
+2020-03-30 14:43:08.162 +02:00 [VRB] Building constructor statement in type TIMESTRUCT member AttributeName="";
+2020-03-30 14:43:08.178 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\TIMESTRUCT.g.cs
+2020-03-30 14:43:08.190 +02:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _bias=Vortex.Connector.IConnectorFactory.CreateDINT();
+2020-03-30 14:43:08.192 +02:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _standardName=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:08.192 +02:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _standardDate=newTc2_Utilities.TIMESTRUCT();
+2020-03-30 14:43:08.195 +02:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _standardBias=Vortex.Connector.IConnectorFactory.CreateDINT();
+2020-03-30 14:43:08.196 +02:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _daylightName=Vortex.Connector.IConnectorFactory.CreateSTRING();
+2020-03-30 14:43:08.197 +02:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _daylightDate=newTc2_Utilities.TIMESTRUCT();
+2020-03-30 14:43:08.200 +02:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member _daylightBias=Vortex.Connector.IConnectorFactory.CreateDINT();
+2020-03-30 14:43:08.200 +02:00 [VRB] Building constructor statement in type ST_TimeZoneInformation member AttributeName="";
+2020-03-30 14:43:08.224 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\ST_TimeZoneInformation.g.cs
+2020-03-30 14:43:08.236 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.NT_GetTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_GetTime","0","0"
+2020-03-30 14:43:08.238 +02:00 [VRB] Building constructor statement in type NT_GetTime member _START=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.238 +02:00 [VRB] Building constructor statement in type NT_GetTime member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.238 +02:00 [VRB] Building constructor statement in type NT_GetTime member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.239 +02:00 [VRB] Building constructor statement in type NT_GetTime member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.242 +02:00 [VRB] Building constructor statement in type NT_GetTime member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.242 +02:00 [VRB] Building constructor statement in type NT_GetTime member _TIMESTR=newTc2_Utilities.TIMESTRUCT();
+2020-03-30 14:43:08.242 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.ADSREAD' declared in 'Tc2_Utilities.NT_GetTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_GetTime","0","0"
+2020-03-30 14:43:08.243 +02:00 [VRB] Building constructor statement in type NT_GetTime member AttributeName="";
+2020-03-30 14:43:08.256 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\NT_GetTime.g.cs
+2020-03-30 14:43:08.268 +02:00 [VRB] Building constructor statement in type ST_AmsGetTimeZoneInformation member _tzInfo=newTc2_Utilities.ST_TimeZoneInformation();
+2020-03-30 14:43:08.268 +02:00 [VRB] Building constructor statement in type ST_AmsGetTimeZoneInformation member _apiResult=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.268 +02:00 [VRB] Building constructor statement in type ST_AmsGetTimeZoneInformation member AttributeName="";
+2020-03-30 14:43:08.278 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\ST_AmsGetTimeZoneInformation.g.cs
+2020-03-30 14:43:08.288 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.FB_GetTimeZoneInformation' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_GetTimeZoneInformation","0","0"
+2020-03-30 14:43:08.288 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _bExecute=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.289 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _tTimeout=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.290 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _bBusy=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.290 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _bError=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.294 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _nErrID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.304 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _tzID=Vortex.Connector.IConnectorFactory.CreateINT();
+2020-03-30 14:43:08.304 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _tzInfo=newTc2_Utilities.ST_TimeZoneInformation();
+2020-03-30 14:43:08.306 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.ADSREAD' declared in 'Tc2_Utilities.FB_GetTimeZoneInformation' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_GetTimeZoneInformation","0","0"
+2020-03-30 14:43:08.306 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.FB_GetTimeZoneInformation' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_GetTimeZoneInformation","0","0"
+2020-03-30 14:43:08.306 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _state=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-03-30 14:43:08.310 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member _res=newTc2_Utilities.ST_AmsGetTimeZoneInformation();
+2020-03-30 14:43:08.310 +02:00 [VRB] Building constructor statement in type FB_GetTimeZoneInformation member AttributeName="";
+2020-03-30 14:43:08.326 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\FB_GetTimeZoneInformation.g.cs
+2020-03-30 14:43:08.338 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_MaxString' declared in 'Tc2_Utilities.ST_HKeySrvRead' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","ST_HKeySrvRead","0","0"
+2020-03-30 14:43:08.338 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_MaxString' declared in 'Tc2_Utilities.ST_HKeySrvRead' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","ST_HKeySrvRead","0","0"
+2020-03-30 14:43:08.338 +02:00 [VRB] Building constructor statement in type ST_HKeySrvRead member AttributeName="";
+2020-03-30 14:43:08.347 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\ST_HKeySrvRead.g.cs
+2020-03-30 14:43:08.352 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-03-30 14:43:08.352 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_MaxString' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-03-30 14:43:08.352 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_MaxString' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-03-30 14:43:08.352 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _cbData=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.352 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _pData=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-03-30 14:43:08.353 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _bExecute=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.354 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _tTimeOut=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.357 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _bBusy=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.357 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _bError=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.359 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _nErrId=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.359 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _cbRead=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.361 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.ADSRDWRTEX' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-03-30 14:43:08.362 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.FB_RegQueryValue' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_RegQueryValue","0","0"
+2020-03-30 14:43:08.362 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _state=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-03-30 14:43:08.363 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _s1Len=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.365 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _s2Len=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.365 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _ptr=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-03-30 14:43:08.366 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _cbBuff=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.367 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member _tmpBuff=newTc2_Utilities.ST_HKeySrvRead();
+2020-03-30 14:43:08.368 +02:00 [VRB] Building constructor statement in type FB_RegQueryValue member AttributeName="";
+2020-03-30 14:43:08.405 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\FB_RegQueryValue.g.cs
+2020-03-30 14:43:08.417 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.NT_SetTimeToRTCTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_SetTimeToRTCTime","0","0"
+2020-03-30 14:43:08.418 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _SET=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.418 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _TMOUT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.424 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _BUSY=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.424 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _ERR=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.424 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _ERRID=Vortex.Connector.IConnectorFactory.CreateUDINT();
+2020-03-30 14:43:08.441 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.ADSWRITE' declared in 'Tc2_Utilities.NT_SetTimeToRTCTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_SetTimeToRTCTime","0","0"
+2020-03-30 14:43:08.441 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _fbRegQuery=newTc2_Utilities.FB_RegQueryValue();
+2020-03-30 14:43:08.441 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.NT_SetTimeToRTCTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","NT_SetTimeToRTCTime","0","0"
+2020-03-30 14:43:08.441 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _bTmp=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.441 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _state=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-03-30 14:43:08.443 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _bInit=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.443 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member _numOfCPUs=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.443 +02:00 [VRB] Building constructor statement in type NT_SetTimeToRTCTime member AttributeName="";
+2020-03-30 14:43:08.461 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\NT_SetTimeToRTCTime.g.cs
+2020-03-30 14:43:08.471 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _EN=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.471 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _PDT=newTc2_Utilities.TIMESTRUCT();
+2020-03-30 14:43:08.496 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _PMICRO=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.497 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _Q=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.499 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _CDT=newTc2_Utilities.TIMESTRUCT();
+2020-03-30 14:43:08.499 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _CMICRO=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.501 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.GETCPUCOUNTER' declared in 'Tc2_Utilities.RTC_EX2' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","RTC_EX2","0","0"
+2020-03-30 14:43:08.502 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.RTC_EX2' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","RTC_EX2","0","0"
+2020-03-30 14:43:08.502 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _oldTick=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.503 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _currTick=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.505 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _nanoDiff=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.507 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _nanoRest=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.508 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _secDiff=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.510 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _dateTime=Vortex.Connector.IConnectorFactory.CreateDATE_TIME();
+2020-03-30 14:43:08.511 +02:00 [VRB] Building constructor statement in type RTC_EX2 member _bInitialized=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.512 +02:00 [VRB] Building constructor statement in type RTC_EX2 member AttributeName="";
+2020-03-30 14:43:08.533 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\RTC_EX2.g.cs
+2020-03-30 14:43:08.550 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_System.T_AmsNetID' declared in 'Tc2_Utilities.FB_LocalSystemTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_LocalSystemTime","0","0"
+2020-03-30 14:43:08.551 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _bEnable=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.555 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _dwCycle=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.557 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _dwOpt=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.558 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _tTimeout=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.561 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _bValid=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.563 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _systemTime=newTc2_Utilities.TIMESTRUCT();
+2020-03-30 14:43:08.565 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _tzID=Vortex.Connector.IConnectorFactory.CreateINT();
+2020-03-30 14:43:08.567 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.R_TRIG' declared in 'Tc2_Utilities.FB_LocalSystemTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_LocalSystemTime","0","0"
+2020-03-30 14:43:08.568 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _state=Vortex.Connector.IConnectorFactory.CreateBYTE();
+2020-03-30 14:43:08.572 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _fbNT=newTc2_Utilities.NT_GetTime();
+2020-03-30 14:43:08.572 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _fbTZ=newTc2_Utilities.FB_GetTimeZoneInformation();
+2020-03-30 14:43:08.574 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _fbSET=newTc2_Utilities.NT_SetTimeToRTCTime();
+2020-03-30 14:43:08.574 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _fbRTC=newTc2_Utilities.RTC_EX2();
+2020-03-30 14:43:08.575 +02:00 [WRN] >>>>>>"W","","Type 'Tc2_Standard.TON' declared in 'Tc2_Utilities.FB_LocalSystemTime' is unknown it won't be used. If the type should be known check the reference; letter casing of the type identifier; correct namespace in which the type is located","Tc2_Utilities","FB_LocalSystemTime","0","0"
+2020-03-30 14:43:08.576 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _nSync=Vortex.Connector.IConnectorFactory.CreateDWORD();
+2020-03-30 14:43:08.579 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member _bNotSup=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.579 +02:00 [VRB] Building constructor statement in type FB_LocalSystemTime member AttributeName="";
+2020-03-30 14:43:08.608 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\FB_LocalSystemTime.g.cs
+2020-03-30 14:43:08.622 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_HashPrefixTypes.g.cs
+2020-03-30 14:43:08.634 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_SBCSType.g.cs
+2020-03-30 14:43:08.643 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_RouteTransportType.g.cs
+2020-03-30 14:43:08.650 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_ArgType.g.cs
+2020-03-30 14:43:08.658 +02:00 [VRB] Generating source for project: Tc2_Utilities.Tc2_Utilities in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Utilities\src\singles\E_TimeZoneID.g.cs
+2020-03-30 14:43:08.661 +02:00 [INF] Compiling sources 'Tc2_Standard'...
+2020-03-30 14:43:08.664 +02:00 [VRB] Building constructor statement in type R_TRIG member _CLK=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.664 +02:00 [VRB] Building constructor statement in type R_TRIG member _Q=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.664 +02:00 [VRB] Building constructor statement in type R_TRIG member _M=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.666 +02:00 [VRB] Building constructor statement in type R_TRIG member AttributeName="";
+2020-03-30 14:43:08.678 +02:00 [VRB] Generating source for project: Tc2_Standard.Tc2_Standard in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Standard\src\singles\R_TRIG.g.cs
+2020-03-30 14:43:08.688 +02:00 [VRB] Building constructor statement in type TON member _IN=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.689 +02:00 [VRB] Building constructor statement in type TON member _PT=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.690 +02:00 [VRB] Building constructor statement in type TON member _Q=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.692 +02:00 [VRB] Building constructor statement in type TON member _ET=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.693 +02:00 [VRB] Building constructor statement in type TON member _M=Vortex.Connector.IConnectorFactory.CreateBOOL();
+2020-03-30 14:43:08.694 +02:00 [VRB] Building constructor statement in type TON member _StartTime=Vortex.Connector.IConnectorFactory.CreateTIME();
+2020-03-30 14:43:08.696 +02:00 [VRB] Building constructor statement in type TON member AttributeName="";
+2020-03-30 14:43:08.726 +02:00 [VRB] Generating source for project: Tc2_Standard.Tc2_Standard in C:\WORK\INXTON\102_InxtonCoreConsoleWriteToPLC\WeatherForecast\_Vortex\out\PLC\Tc2_Standard\src\singles\TON.g.cs
+2020-03-30 14:43:08.739 +02:00 [VRB] Creating localization for type PLC.stForecast
+2020-03-30 14:43:08.741 +02:00 [VRB] Creating localization for type PLC.stWeatherData
+2020-03-30 14:43:08.741 +02:00 [VRB] Creating localization for type PLC.MAIN
+2020-03-30 14:43:08.741 +02:00 [VRB] Creating localization for type PLC.PLCTwinController
+2020-03-30 14:43:08.741 +02:00 [VRB] Creating localization for type PLC.ST_LibVersion
+2020-03-30 14:43:08.741 +02:00 [VRB] Creating localization for type PLC.PlcAppSystemInfo
+2020-03-30 14:43:08.741 +02:00 [VRB] Creating localization for type PLC.PlcTaskSystemInfo
+2020-03-30 14:43:08.819 +02:00 [INF] >>>>>>I, Done

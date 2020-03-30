@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="MAIN" Id="{555858ef-0c6a-4966-a768-92a29ef617b6}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	WeatherData : stWeatherData;
+	bGetWeatherData : BOOL;
+	sysTime : TIMESTRUCT;
+	actDateTime : DT;
+	fb_LocalSystemTime : FB_LocalSystemTime;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fb_LocalSystemTime(bEnable := TRUE, systemTime => sysTime);
+actDateTime := SYSTEMTIME_TO_DT(sysTime);
+
+IF actDateTime > WeatherData.Forecast[0].timeTo THEN
+	bGetWeatherData := TRUE;
+END_IF
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="22" Count="0" />
+      <LineId Id="39" Count="0" />
+      <LineId Id="41" Count="0" />
+      <LineId Id="40" Count="0" />
+      <LineId Id="42" Count="1" />
+      <LineId Id="37" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

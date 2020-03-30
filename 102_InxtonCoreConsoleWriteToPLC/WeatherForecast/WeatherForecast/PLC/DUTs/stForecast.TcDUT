@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <DUT Name="stForecast" Id="{0235dd61-d1d2-416f-9b52-42e423816128}">
+    <Declaration><![CDATA[TYPE stForecast :
+STRUCT
+	timeFrom : DT;
+	timeTo : DT;
+	precipitation_unit : STRING;
+	precipitation_value : REAL;
+	precipitation_type : STRING;
+	windDirection_value : REAL;
+	windDirection_name : STRING;
+	windSpeed_value : REAL;
+	windSpeed_unit : STRING;
+	windSpeed_name : STRING;
+	temperature_value : REAL;
+	temperature_unit : STRING;
+	temperature_min : REAL;
+	temperature_max : REAL;
+	temperature_feel_like : REAL;
+	pressure_value : REAL;
+	pressure_unit : STRING;
+	humidity_value : REAL;
+	humidity_UNIT : STRING;
+	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
