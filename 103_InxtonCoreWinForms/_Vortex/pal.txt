@@ -1,0 +1,15 @@
+2020-03-25 17:55:34.710 +01:00 [INF] Opening solution: C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\InxtonCoreConsole.sln
+2020-03-25 17:55:34.912 +01:00 [DBG] Retrieving file C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\InxtonCoreConsole\RoomController\DUTs\stAi4CH.TcDUT
+2020-03-25 17:55:34.967 +01:00 [DBG] Retrieving file C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\InxtonCoreConsole\RoomController\DUTs\stRoomData.TcDUT
+2020-03-25 17:55:34.976 +01:00 [DBG] Retrieving file C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\InxtonCoreConsole\RoomController\GVLs\IO.TcGVL
+2020-03-25 17:55:34.986 +01:00 [DBG] Retrieving file C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\InxtonCoreConsole\RoomController\PlcTask.TcTTO
+2020-03-25 17:55:34.997 +01:00 [DBG] Retrieving file C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\InxtonCoreConsole\RoomController\POUs\MAIN.TcPOU
+2020-03-25 17:55:35.036 +01:00 [INF] Building project 'RoomController.RoomController'
+2020-03-25 17:55:35.038 +01:00 [INF] Installing project libraries into project 'RoomController'
+2020-03-25 17:55:35.437 +01:00 [INF] Updating project RoomController.RoomController
+2020-03-25 17:55:37.467 +01:00 [VRB] Adding link to the file'C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\_Vortex\out\RoomController\src\singles\IO.g.cs' to project 'RoomController'
+2020-03-25 17:55:38.071 +01:00 [VRB] Adding link to the file'C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\_Vortex\out\RoomController\src\singles\MAIN.g.cs' to project 'RoomController'
+2020-03-25 17:55:38.129 +01:00 [VRB] Adding link to the file'C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\_Vortex\out\RoomController\src\singles\RoomController.g.cs' to project 'RoomController'
+2020-03-25 17:55:38.202 +01:00 [VRB] Adding link to the file'C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\_Vortex\out\RoomController\src\singles\stAi4CH.g.cs' to project 'RoomController'
+2020-03-25 17:55:38.282 +01:00 [VRB] Adding link to the file'C:\WORK\INXTON\100_InxtonCoreConsole\InxtonCoreConsole\_Vortex\out\RoomController\src\singles\stRoomData.g.cs' to project 'RoomController'
+2020-03-25 17:55:38.486 +01:00 [WRN] Unable to update localization file in project RoomControllerConnector
