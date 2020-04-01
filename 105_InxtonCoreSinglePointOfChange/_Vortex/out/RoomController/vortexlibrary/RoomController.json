@@ -1,0 +1,42 @@
+{
+  "Types": [
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "fbIntValueSimulation",
+      "Namespace": "RoomController",
+      "TypeMetaInfo": 4
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "stAi8CH",
+      "Namespace": "RoomController",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "stRoomData",
+      "Namespace": "RoomController",
+      "TypeMetaInfo": 1
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "IO",
+      "Namespace": "RoomController",
+      "TypeMetaInfo": 0
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "Hardware_Simulation",
+      "Namespace": "RoomController",
+      "TypeMetaInfo": 3
+    },
+    {
+      "TypeAttributes": "\n{attribute addProperty Name \"\" }",
+      "TypeName": "MAIN",
+      "Namespace": "RoomController",
+      "TypeMetaInfo": 3
+    }
+  ],
+  "Name": "RoomController",
+  "Namespace": "RoomController"
+}

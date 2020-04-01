@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="Hardware_Simulation" Id="{da7fa4ca-cfd1-4a6d-a3bc-8d16dfce7ab1}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM Hardware_Simulation
+VAR
+	CH1 : fbIntValueSimulation;
+	CH2 : fbIntValueSimulation;
+	CH3 : fbIntValueSimulation;
+	CH4 : fbIntValueSimulation;
+	
+	CH5 : fbIntValueSimulation;
+	CH6 : fbIntValueSimulation;
+	CH7 : fbIntValueSimulation;
+	CH8 : fbIntValueSimulation;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[CH1(MinValue := 16000 , MaxValue := 16500 , Value := IO.hwAirDataIN.CH1);
+CH2(MinValue := 9800 , MaxValue := 10000 , Value := IO.hwAirDataIN.CH2);
+CH3(MinValue := 300 , MaxValue := 350 , Value := IO.hwAirDataIN.CH3);
+CH4(MinValue := 3600 , MaxValue := 3700 , Value := IO.hwAirDataIN.CH4);
+
+CH5(MinValue := 2620 , MaxValue := 2650 , Value := IO.hwAirDataIN.CH5);
+CH6(MinValue := 10000 , MaxValue := 10500 , Value := IO.hwAirDataIN.CH6);
+CH7(MinValue := 3930 , MaxValue := 4000 , Value := IO.hwAirDataIN.CH7);
+CH8(MinValue := 6000 , MaxValue := 6200 , Value := IO.hwAirDataIN.CH8);
+]]></ST>
+    </Implementation>
+    <LineIds Name="Hardware_Simulation">
+      <LineId Id="5" Count="0" />
+      <LineId Id="14" Count="2" />
+      <LineId Id="30" Count="0" />
+      <LineId Id="29" Count="0" />
+      <LineId Id="31" Count="2" />
+      <LineId Id="12" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

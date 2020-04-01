@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <DUT Name="stAi8CH" Id="{b25bbdb0-7f56-4704-85b1-09d56ef3dbf6}">
+    <Declaration><![CDATA[TYPE stAi8CH :
+STRUCT
+	CH1 AT %I* : INT;
+	CH2 AT %I* : INT;
+	CH3 AT %I* : INT;
+	CH4 AT %I* : INT;
+	CH5 AT %I* : INT;
+	CH6 AT %I* : INT;
+	CH7 AT %I* : INT;
+	CH8 AT %I* : INT;
+	
+END_STRUCT
+END_TYPE
+]]></Declaration>
+  </DUT>
+</TcPlcObject>

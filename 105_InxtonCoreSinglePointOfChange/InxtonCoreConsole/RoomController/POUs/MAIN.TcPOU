@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="MAIN" Id="{6bff2563-8138-4968-9328-b38d21e7b1ab}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	RoomData : stRoomData;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Hardware_Simulation();
+
+RoomData.Temperature := INT_TO_REAL(IO.hwAirDataIN.CH1) / 32767 * 50.0; // as 0-10V~0-32767~0-50°C
+RoomData.Humidity := INT_TO_REAL(IO.hwAirDataIN.CH2) / 32767 * 100.0; // as 0-10V~0-32767~0-100%
+RoomData.VOC := INT_TO_REAL(IO.hwAirDataIN.CH3) / 32767 * 100.0; // as 0-10V~0-32767~0-100%
+RoomData.CO2 := INT_TO_REAL(IO.hwAirDataIN.CH4) / 32767 * 5000.0; // as 0-10V~0-32767~0-5000ppm
+
+RoomData.AbsoluteHumidity := INT_TO_REAL(IO.hwAirDataIN.CH5) / 32767 * 10.0; // as 0-10V~0-32767~0-10 g/m3
+RoomData.Enthalpy := INT_TO_REAL(IO.hwAirDataIN.CH6) / 32767 * 100.0; // as 0-10V~0-32767~0-100 kJ/kg
+RoomData.DewPoint := INT_TO_REAL(IO.hwAirDataIN.CH7) / 32767 * 50.0; // as 0-10V~0-32767~0-50 °C
+RoomData.CO2VOC_MIX := INT_TO_REAL(IO.hwAirDataIN.CH8) / 32767 * 50.0; // as 0-10V~0-32767~0-50
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="15" Count="1" />
+      <LineId Id="2" Count="0" />
+      <LineId Id="7" Count="2" />
+      <LineId Id="22" Count="0" />
+      <LineId Id="21" Count="0" />
+      <LineId Id="23" Count="2" />
+      <LineId Id="10" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

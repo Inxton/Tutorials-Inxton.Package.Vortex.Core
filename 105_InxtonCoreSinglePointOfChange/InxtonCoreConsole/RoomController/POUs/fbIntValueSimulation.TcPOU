@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="fbIntValueSimulation" Id="{183a9033-3427-48b9-b17e-cfe7a861b8e9}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK fbIntValueSimulation
+VAR_INPUT
+	MinValue : INT;
+	MaxValue : INT;
+END_VAR
+VAR_IN_OUT
+	Value : INT;
+END_VAR
+VAR
+	p1 : INT :=2;
+	p2 : INT :=1;
+	pm : INT;
+	x0 : INT;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[x0 := Value;
+pm := MaxValue-MinValue;
+IF x0 = 0 THEN
+	x0 := (MaxValue + MinValue) / 2;
+END_IF
+
+Value := MinValue + ((x0*p1 + p2) MOD pm);]]></ST>
+    </Implementation>
+    <LineIds Name="fbIntValueSimulation">
+      <LineId Id="18" Count="0" />
+      <LineId Id="9" Count="0" />
+      <LineId Id="16" Count="0" />
+      <LineId Id="19" Count="1" />
+      <LineId Id="22" Count="0" />
+      <LineId Id="21" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
