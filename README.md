@@ -17,6 +17,7 @@ Get your free developer licence [more info here](https://github.com/Inxton/docum
 ## More resources
 
 Documentation [Inxton.Package.Vortex.Core](https://github.com/Inxton/Inxton.Package.Vortex.Core)
+
 Examples [Examples-Inxton.Package.Vortex.Core](https://github.com/Inxton/Examples-Inxton.Package.Vortex.Core)
 
 
