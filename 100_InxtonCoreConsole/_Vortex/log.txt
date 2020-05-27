@@ -47,3 +47,6 @@
 2020-03-25 17:55:38.400 +01:00 [VRB] Creating localization for type RoomController.PlcAppSystemInfo
 2020-03-25 17:55:38.400 +01:00 [VRB] Creating localization for type RoomController.PlcTaskSystemInfo
 2020-03-25 17:55:38.546 +01:00 [INF] >>>>>>I, Done
+2020-05-27 08:51:47.680 +02:00 [INF] Builder version : 1.0.0.0 / 1.0.0+Branch.master.Sha.78115111a204fbfc55a8187cd2a854f5d9d87fed
+2020-05-27 08:51:53.352 +02:00 [INF] Compiling sources 'RoomController'...
+2020-05-27 08:51:54.657 +02:00 [INF] >>>>>>I, Done

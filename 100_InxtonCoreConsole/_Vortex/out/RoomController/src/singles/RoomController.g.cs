@@ -6,7 +6,7 @@ using Vortex.Connector.ValueTypes;
 using Vortex.Connector.Identity;
 using RoomControllerConnector.Properties;
 
-[assembly: Vortex.Connector.Attributes.AssemblyPlcCounterPart("{\r\n  \"Types\": [\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"stAi4CH\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 1\r\n    },\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"stRoomData\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 1\r\n    },\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"IO\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 0\r\n    },\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"MAIN\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 3\r\n    }\r\n  ],\r\n  \"Name\": \"RoomController\",\r\n  \"Namespace\": \"RoomController\"\r\n}")]
+[assembly: Vortex.Connector.Attributes.AssemblyPlcCounterPart("{\r\n  \"Types\": [\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"fbIntValueSimulation\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 4\r\n    },\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"stAi4CH\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 1\r\n    },\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"stRoomData\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 1\r\n    },\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"IO\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 0\r\n    },\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"Hardware_Simulation\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 3\r\n    },\r\n    {\r\n      \"TypeAttributes\": \"\\n{attribute addProperty Name \\\"\\\" }\",\r\n      \"TypeName\": \"MAIN\",\r\n      \"Namespace\": \"RoomController\",\r\n      \"TypeMetaInfo\": 3\r\n    }\r\n  ],\r\n  \"Name\": \"RoomController\",\r\n  \"Namespace\": \"RoomController\"\r\n}")]
 namespace RoomController
 {
 	public partial class RoomControllerTwinController : Vortex.Connector.ITwinController, IRoomControllerTwinController, IShadowRoomControllerTwinController
@@ -56,6 +56,31 @@ namespace RoomController
 			}
 		}
 
+		Hardware_Simulation _Hardware_Simulation;
+		public Hardware_Simulation Hardware_Simulation
+		{
+			get
+			{
+				return _Hardware_Simulation;
+			}
+		}
+
+		IHardware_Simulation IRoomControllerTwinController.Hardware_Simulation
+		{
+			get
+			{
+				return Hardware_Simulation;
+			}
+		}
+
+		IShadowHardware_Simulation IShadowRoomControllerTwinController.Hardware_Simulation
+		{
+			get
+			{
+				return Hardware_Simulation;
+			}
+		}
+
 		MAIN _MAIN;
 		public MAIN MAIN
 		{
@@ -84,12 +109,14 @@ namespace RoomController
 		public void LazyOnlineToShadow()
 		{
 			IO.LazyOnlineToShadow();
+			Hardware_Simulation.LazyOnlineToShadow();
 			MAIN.LazyOnlineToShadow();
 		}
 
 		public void LazyShadowToOnline()
 		{
 			IO.LazyShadowToOnline();
+			Hardware_Simulation.LazyShadowToOnline();
 			MAIN.LazyShadowToOnline();
 		}
 
@@ -97,6 +124,7 @@ namespace RoomController
 		{
 			var cloned = new PlainRoomControllerTwinController();
 			cloned.IO = IO.CreatePlainerType();
+			cloned.Hardware_Simulation = Hardware_Simulation.CreatePlainerType();
 			cloned.MAIN = MAIN.CreatePlainerType();
 			return cloned;
 		}
@@ -104,6 +132,7 @@ namespace RoomController
 		protected PlainRoomControllerTwinController CreatePlainerType(PlainRoomControllerTwinController cloned)
 		{
 			cloned.IO = IO.CreatePlainerType();
+			cloned.Hardware_Simulation = Hardware_Simulation.CreatePlainerType();
 			cloned.MAIN = MAIN.CreatePlainerType();
 			return cloned;
 		}
@@ -154,6 +183,7 @@ namespace RoomController
 			var adapter = new Vortex.Connector.ConnectorAdapter(typeof (DummyConnectorFactory));
 			this.Connector = adapter.GetConnector(new object[]{});
 			_IO = new IO(this.Connector, "", "IO");
+			_Hardware_Simulation = new Hardware_Simulation(this.Connector, "", "Hardware_Simulation");
 			_MAIN = new MAIN(this.Connector, "", "MAIN");
 		}
 
@@ -161,6 +191,7 @@ namespace RoomController
 		{
 			this.Connector = adapter.GetConnector(parameters);
 			_IO = new IO(this.Connector, "", "IO");
+			_Hardware_Simulation = new Hardware_Simulation(this.Connector, "", "Hardware_Simulation");
 			_MAIN = new MAIN(this.Connector, "", "MAIN");
 		}
 
@@ -168,6 +199,7 @@ namespace RoomController
 		{
 			this.Connector = adapter.GetConnector(adapter.Parameters);
 			_IO = new IO(this.Connector, "", "IO");
+			_Hardware_Simulation = new Hardware_Simulation(this.Connector, "", "Hardware_Simulation");
 			_MAIN = new MAIN(this.Connector, "", "MAIN");
 		}
 
@@ -203,6 +235,11 @@ namespace RoomController
 			get;
 		}
 
+		IHardware_Simulation Hardware_Simulation
+		{
+			get;
+		}
+
 		IMAIN MAIN
 		{
 			get;
@@ -219,6 +256,11 @@ namespace RoomController
 	public partial interface IShadowRoomControllerTwinController
 	{
 		IShadowIO IO
+		{
+			get;
+		}
+
+		IShadowHardware_Simulation Hardware_Simulation
 		{
 			get;
 		}
@@ -257,6 +299,20 @@ namespace RoomController
 			}
 		}
 
+		PlainHardware_Simulation _Hardware_Simulation;
+		public PlainHardware_Simulation Hardware_Simulation
+		{
+			get
+			{
+				return _Hardware_Simulation;
+			}
+
+			set
+			{
+				_Hardware_Simulation = value;
+			}
+		}
+
 		PlainMAIN _MAIN;
 		public PlainMAIN MAIN
 		{
@@ -274,6 +330,7 @@ namespace RoomController
 		public void CopyPlainToCyclic(RoomController.RoomControllerTwinController target)
 		{
 			IO.CopyPlainToCyclic(target.IO);
+			Hardware_Simulation.CopyPlainToCyclic(target.Hardware_Simulation);
 			MAIN.CopyPlainToCyclic(target.MAIN);
 		}
 
@@ -285,6 +342,7 @@ namespace RoomController
 		public void CopyPlainToShadow(RoomController.RoomControllerTwinController target)
 		{
 			IO.CopyPlainToShadow(target.IO);
+			Hardware_Simulation.CopyPlainToShadow(target.Hardware_Simulation);
 			MAIN.CopyPlainToShadow(target.MAIN);
 		}
 
@@ -296,6 +354,7 @@ namespace RoomController
 		public void CopyCyclicToPlain(RoomController.RoomControllerTwinController source)
 		{
 			IO.CopyCyclicToPlain(source.IO);
+			Hardware_Simulation.CopyCyclicToPlain(source.Hardware_Simulation);
 			MAIN.CopyCyclicToPlain(source.MAIN);
 		}
 
@@ -307,6 +366,7 @@ namespace RoomController
 		public void CopyShadowToPlain(RoomController.RoomControllerTwinController source)
 		{
 			IO.CopyShadowToPlain(source.IO);
+			Hardware_Simulation.CopyShadowToPlain(source.Hardware_Simulation);
 			MAIN.CopyShadowToPlain(source.MAIN);
 		}
 
@@ -318,6 +378,7 @@ namespace RoomController
 		public PlainRoomControllerTwinController()
 		{
 			_IO = new PlainIO();
+			_Hardware_Simulation = new PlainHardware_Simulation();
 			_MAIN = new PlainMAIN();
 		}
 	}
