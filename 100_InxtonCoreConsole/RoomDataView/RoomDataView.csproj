@@ -6,7 +6,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Inxton.Package.Vortex.Core" Version="1.9.6" />
+    <PackageReference Include="Inxton.Package.Vortex.Core" Version="1.9.4" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RoomControllerConnector\RoomControllerConnector.csproj"/>
