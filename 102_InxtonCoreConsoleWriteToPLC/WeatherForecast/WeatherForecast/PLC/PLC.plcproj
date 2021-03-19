@@ -15,6 +15,8 @@
     <Implicit_KindOfTask>{63e6277f-ff41-44da-9599-6aac8494b7ed}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{e84b8414-ea6c-4ea2-8eba-96168deae5fb}</Implicit_Jitter_Distribution>
     <LibraryReferences>{fa3e3368-ae75-4587-be0c-1c84f242e91d}</LibraryReferences>
+    <DefaultNamespace>PLC</DefaultNamespace>
+    <Released>false</Released>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DUTs\stForecast.TcDUT">
