@@ -1,0 +1,48 @@
+{
+  "AliasBlocks": [],
+  "EnumBlocks": [],
+  "FunctionBlocks": [
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "fbIntValueSimulation",
+      "DeclarationText": "[NS : 'RoomController' NAME : 'fbIntValueSimulation']\nFUNCTION_BLOCK fbIntValueSimulation\nVAR_INPUT\n\tMinValue : INT;\n\tMaxValue : INT;\nEND_VAR\nVAR_IN_OUT\n\tValue : INT;\nEND_VAR\nVAR\n\tp1 : INT :=2;\n\tp2 : INT :=1;\n\tpm : INT;\n\tx0 : INT;\nEND_VAR\n",
+      "MirrorFiles": null
+    }
+  ],
+  "GlobalVariableTables": [],
+  "Name": "RoomController",
+  "Namespace": "RoomController",
+  "ProgramBlocks": [
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "Hardware_Simulation",
+      "DeclarationText": "[NS : 'RoomController' NAME : 'Hardware_Simulation']\nPROGRAM Hardware_Simulation\nVAR\n\tCH1 : fbIntValueSimulation;\n\tCH2 : fbIntValueSimulation;\n\tCH3 : fbIntValueSimulation;\n\tCH4 : fbIntValueSimulation;\nEND_VAR\n",
+      "MirrorFiles": null
+    },
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "MAIN",
+      "DeclarationText": "[NS : 'RoomController' NAME : 'MAIN']\nPROGRAM MAIN\nVAR\n\tRoomData : stRoomData;\nEND_VAR\n",
+      "MirrorFiles": null
+    }
+  ],
+  "StructBlocks": [
+    {
+      "Name": "stAi4CH",
+      "DeclarationText": "[NS : 'RoomController' NAME : 'stAi4CH'] [STRUCT]\nTYPE stAi4CH :\nSTRUCT\n\tCH1 AT %I* : INT;\n\tCH2 AT %I* : INT;\n\tCH3 AT %I* : INT;\n\tCH4 AT %I* : INT;\nEND_STRUCT\nEND_TYPE\n",
+      "MirrorFiles": null
+    },
+    {
+      "Name": "stRoomData",
+      "DeclarationText": "[NS : 'RoomController' NAME : 'stRoomData'] [STRUCT]\nTYPE stRoomData :\nSTRUCT\n\t{attribute addProperty Name \"<#Actual room temperature °C#>\"}\n\tTemperature : REAL;\n\t{attribute addProperty Name \"<#Actual room humidity %#>\"}\n\tHumidity : REAL;\n\t{attribute addProperty Name \"<#Actual room VOC %#>\"}\n\tVOC : REAL;\n\t{attribute addProperty Name \"<#Actual room CO2 concentration ppm#>\"}\n\tCO2 : REAL;\nEND_STRUCT\nEND_TYPE\n",
+      "MirrorFiles": null
+    }
+  ],
+  "UnionBlocks": []
+}

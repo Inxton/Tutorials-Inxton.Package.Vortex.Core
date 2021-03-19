@@ -10,9 +10,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Localizations.Designer.cs">
-      <DesignTime> True </DesignTime>
-      <AutoGen> True </AutoGen>
-      <DependentUpon> Localizations.resx </DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Localizations.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
