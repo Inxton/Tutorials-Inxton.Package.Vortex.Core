@@ -38,16 +38,25 @@
 				<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="RoomController\RoomController.tmc">
 					<Name>RoomController Instance</Name>
 					<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
-					<UnrestoredVarLinks ImportTime="2020-05-27T08:49:50">
-						<OwnerA Name="InputDst" Prefix="TIPC^RoomController^RoomController Instance" Type="1">
-							<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL3164)">
-								<Link VarA="IO.hwAirDataIN.CH1" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 1^Value" RestoreInfo="ANotFound"/>
-								<Link VarA="IO.hwAirDataIN.CH2" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 2^Value" RestoreInfo="ANotFound"/>
-								<Link VarA="IO.hwAirDataIN.CH3" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 3^Value" RestoreInfo="ANotFound"/>
-								<Link VarA="IO.hwAirDataIN.CH4" TypeA="INT" InOutA="0" GuidA="{18071995-0000-0000-0000-000000000006}" VarB="AI Standard Channel 4^Value" RestoreInfo="ANotFound"/>
-							</OwnerB>
-						</OwnerA>
-					</UnrestoredVarLinks>
+					<Vars VarGrpType="1">
+						<Name>PlcTask Inputs</Name>
+						<Var>
+							<Name>IO.hwAirDataIN.CH1</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>IO.hwAirDataIN.CH2</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>IO.hwAirDataIN.CH3</Name>
+							<Type>INT</Type>
+						</Var>
+						<Var>
+							<Name>IO.hwAirDataIN.CH4</Name>
+							<Type>INT</Type>
+						</Var>
+					</Vars>
 					<TaskPouOids>
 						<TaskPouOid Prio="20" OTCID="#x08502001"/>
 					</TaskPouOids>
@@ -315,4 +324,14 @@ Bit1: Value smaller than Limit2]]></Comment>
 			</Device>
 		</Io>
 	</Project>
+	<Mappings>
+		<OwnerA Name="TIPC^RoomController^RoomController Instance">
+			<OwnerB Name="TIID^Device 1 (EtherCAT)^Term 1 (EK1200)^Term 2 (EL3164)">
+				<Link VarA="PlcTask Inputs^IO.hwAirDataIN.CH1" VarB="AI Standard Channel 1^Value"/>
+				<Link VarA="PlcTask Inputs^IO.hwAirDataIN.CH2" VarB="AI Standard Channel 2^Value"/>
+				<Link VarA="PlcTask Inputs^IO.hwAirDataIN.CH3" VarB="AI Standard Channel 3^Value"/>
+				<Link VarA="PlcTask Inputs^IO.hwAirDataIN.CH4" VarB="AI Standard Channel 4^Value"/>
+			</OwnerB>
+		</OwnerA>
+	</Mappings>
 </TcSmProject>

@@ -201,5 +201,10 @@ _Libraries/
 _Vortex/log.txt
 _Vortex/pal.txt
 **/bin/*
+*.exe
+log.txt
+pal.txt
+CompilerCache.md
+
 
 

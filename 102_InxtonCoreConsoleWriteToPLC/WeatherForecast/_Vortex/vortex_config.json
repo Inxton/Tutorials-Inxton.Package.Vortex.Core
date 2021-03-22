@@ -1,7 +1,7 @@
 {
   "ConfigFile": null,
-  "OutputDirectory": "C:\\WORK\\INXTON\\102_InxtonCoreConsoleWriteToPLC\\WeatherForecast\\_Vortex\\out",
-  "SolutionPath": "C:\\WORK\\INXTON\\102_InxtonCoreConsoleWriteToPLC\\WeatherForecast\\WeatherForecast.sln",
+  "OutputDirectory": "C:\\MTS\\Develop\\GitHub\\Tomas-Example\\Tutorials-Inxton.Package.Vortex.Core\\102_InxtonCoreConsoleWriteToPLC\\WeatherForecast\\_Vortex\\out",
+  "SolutionPath": "C:\\MTS\\Develop\\GitHub\\Tomas-Example\\Tutorials-Inxton.Package.Vortex.Core\\102_InxtonCoreConsoleWriteToPLC\\WeatherForecast\\WeatherForecast.sln",
   "CompilableAttributesSignatures": [
     "wpf",
     "clr"

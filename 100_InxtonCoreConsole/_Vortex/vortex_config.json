@@ -1,7 +1,7 @@
 {
   "ConfigFile": null,
-  "OutputDirectory": "C:\\WORK\\INXTON\\100_InxtonCoreConsole\\InxtonCoreConsole\\_Vortex\\out",
-  "SolutionPath": "C:\\WORK\\INXTON\\100_InxtonCoreConsole\\InxtonCoreConsole\\InxtonCoreConsole.sln",
+  "OutputDirectory": "C:\\MTS\\Develop\\GitHub\\Tomas-Example\\Tutorials-Inxton.Package.Vortex.Core\\100_InxtonCoreConsole\\_Vortex\\out",
+  "SolutionPath": "C:\\MTS\\Develop\\GitHub\\Tomas-Example\\Tutorials-Inxton.Package.Vortex.Core\\100_InxtonCoreConsole\\InxtonCoreConsole.sln",
   "CompilableAttributesSignatures": [
     "wpf",
     "clr"

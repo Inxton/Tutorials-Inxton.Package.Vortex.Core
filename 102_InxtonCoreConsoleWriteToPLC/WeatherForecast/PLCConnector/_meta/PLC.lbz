@@ -1,0 +1,31 @@
+{
+  "AliasBlocks": [],
+  "EnumBlocks": [],
+  "FunctionBlocks": [],
+  "GlobalVariableTables": [],
+  "Name": "PLC",
+  "Namespace": "PLC",
+  "ProgramBlocks": [
+    {
+      "ImplementationText": "",
+      "Methods": [],
+      "Properties": [],
+      "Name": "MAIN",
+      "DeclarationText": "[NS : 'PLC' NAME : 'MAIN']\nPROGRAM MAIN\nVAR\n\tWeatherData : stWeatherData;\n\tbGetWeatherData : BOOL;\n\tsysTime : TIMESTRUCT;\n\tactDateTime : DT;\n\tfb_LocalSystemTime : FB_LocalSystemTime;\nEND_VAR\n",
+      "MirrorFiles": null
+    }
+  ],
+  "StructBlocks": [
+    {
+      "Name": "stForecast",
+      "DeclarationText": "[NS : 'PLC' NAME : 'stForecast'] [STRUCT]\nTYPE stForecast :\nSTRUCT\n\ttimeFrom : DT;\n\ttimeTo : DT;\n\tprecipitation_unit : STRING;\n\tprecipitation_value : REAL;\n\tprecipitation_type : STRING;\n\twindDirection_value : REAL;\n\twindDirection_name : STRING;\n\twindSpeed_value : REAL;\n\twindSpeed_unit : STRING;\n\twindSpeed_name : STRING;\n\ttemperature_value : REAL;\n\ttemperature_unit : STRING;\n\ttemperature_min : REAL;\n\ttemperature_max : REAL;\n\ttemperature_feel_like : REAL;\n\tpressure_value : REAL;\n\tpressure_unit : STRING;\n\thumidity_value : REAL;\n\thumidity_UNIT : STRING;\n\t\nEND_STRUCT\nEND_TYPE\n",
+      "MirrorFiles": null
+    },
+    {
+      "Name": "stWeatherData",
+      "DeclarationText": "[NS : 'PLC' NAME : 'stWeatherData'] [STRUCT]\nTYPE stWeatherData :\nSTRUCT\n\tsunrise : DT;\n\tsunset : DT;\n\tForecast : ARRAY[0..39] OF stForecast;\nEND_STRUCT\nEND_TYPE\n",
+      "MirrorFiles": null
+    }
+  ],
+  "UnionBlocks": []
+}

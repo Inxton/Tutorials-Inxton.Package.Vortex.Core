@@ -15,6 +15,8 @@
     <Implicit_KindOfTask>{b5cec934-72a6-4d44-af06-ae97634f0e64}</Implicit_KindOfTask>
     <Implicit_Jitter_Distribution>{e84c80f6-5f5a-4cab-bd21-e0029e8634c3}</Implicit_Jitter_Distribution>
     <LibraryReferences>{31f8796a-8112-41d2-97fb-d11b2aff6c7d}</LibraryReferences>
+    <DefaultNamespace>RoomController</DefaultNamespace>
+    <Released>false</Released>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="DUTs\stAi4CH.TcDUT">
